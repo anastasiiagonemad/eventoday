@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__links {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      width: 100%;
+
+      li {
+        a {
+          font-size: 0.875em;
+          color: $main-red;
+        }
+      }
+    }
+  }
+
+  &__reg {
+    display: flex;
+    gap: 10px;
+    button {
+      background-color: $main-red;
+      color: white;
+      padding: 8px;
+      border: none;
+      border-radius: 15px;
+      font-size: 0.625em;
+    }
+  }
+}

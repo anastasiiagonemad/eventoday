@@ -1,0 +1,60 @@
+.main__calendar {
+  margin-top: 60px;
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 40px;
+    button {
+      width: 135px;
+      padding: 6px 15px 6px 15px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      border: 2px solid $main-red;
+    }
+    button:hover {
+      background-color: $main-red;
+      color: white;
+    }
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    &-img {
+      img {
+        width: 450px;
+        height: auto;
+      }
+    }
+
+    &-desc {
+      &-1 {
+        p {
+          color: $text;
+          width: 550px;
+        }
+      }
+
+      &-2 {
+        color: $text;
+        margin-top: 50px;
+        &-text1 {
+          margin-bottom: -15px;
+        }
+        &-text2 {
+          padding-right: 100px;
+          display: flex;
+          justify-content: space-between;
+          p:nth-child(2) {
+            color: $main-red;
+          }
+        }
+      }
+    }
+  }
+}
