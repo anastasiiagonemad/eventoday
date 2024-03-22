@@ -360,12 +360,12 @@ p {
     margin-top: 60px;
   }
   .main__calendar-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
   }
   .main__calendar-title h4 {
     font-size: 1.7em;
-    color: #cc1b00;
+    color: black;
   }
   .main__calendar-btn {
     display: flex;
