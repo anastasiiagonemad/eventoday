@@ -92,6 +92,18 @@
   }
 }
 
+@media screen and (max-width: 1120px) {
+  #carouselOne,
+  #carouselTwo {
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      bottom: 100%;
+      left: 80%;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .main__reviews {
     padding: 0;
