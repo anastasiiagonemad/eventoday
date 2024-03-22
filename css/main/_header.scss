@@ -13,8 +13,9 @@
   &__links {
     ul {
       display: flex;
+      text-wrap: nowrap;
       justify-content: center;
-      gap: 80px;
+      gap: 10%;
       width: 100%;
 
       li {
@@ -39,7 +40,13 @@
     }
   }
 }
-
+@media screen and (max-width: 900px) {
+  .main__links {
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+}
 @media screen and (max-width: 600px) {
   .main__links,
   .main__reg a {

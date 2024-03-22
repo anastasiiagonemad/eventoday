@@ -103,6 +103,27 @@ footer {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .footer__container,
+  .footer__container-end {
+    flex-wrap: wrap;
+  }
+
+  .footer__container {
+    &-2 {
+      div:first-child {
+        ul {
+          gap: 0px;
+          flex-direction: column;
+        }
+      }
+      div:last-child {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   footer {
     width: 100%;

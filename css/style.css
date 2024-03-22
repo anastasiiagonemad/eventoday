@@ -43,8 +43,9 @@ p {
 }
 .main__links ul {
   display: flex;
+  text-wrap: nowrap;
   justify-content: center;
-  gap: 80px;
+  gap: 10%;
   width: 100%;
 }
 .main__links ul li a {
@@ -64,6 +65,11 @@ p {
   font-size: 0.625em;
 }
 
+@media screen and (max-width: 900px) {
+  .main__links ul {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 600px) {
   .main__links,
   .main__reg a {
@@ -880,6 +886,19 @@ footer {
   font-weight: 400;
 }
 
+@media screen and (max-width: 900px) {
+  .footer__container,
+  .footer__container-end {
+    flex-wrap: wrap;
+  }
+  .footer__container-2 div:first-child ul {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .footer__container-2 div:last-child {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 600px) {
   footer {
     width: 100%;
