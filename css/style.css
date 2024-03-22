@@ -287,6 +287,10 @@ p {
     cursor: pointer;
   }
 }
+#carouselThree {
+  display: none;
+}
+
 .main__calendar {
   margin-top: 60px;
 }
@@ -354,6 +358,7 @@ p {
     display: none;
   }
   .main__calendar #carouselThree {
+    display: block;
     margin-bottom: 30px;
   }
   .main__calendar #carouselThree div button {
