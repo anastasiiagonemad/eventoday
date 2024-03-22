@@ -148,6 +148,12 @@
 @media screen and (max-width: 600px) {
   .main__calendar {
     margin-top: 60px;
+    &-title {
+      text-align: center;
+      h4 {
+        color: $main-red;
+      }
+    }
 
     &-btn {
       display: none;

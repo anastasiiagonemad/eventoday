@@ -422,6 +422,12 @@ p {
   .main__calendar {
     margin-top: 60px;
   }
+  .main__calendar-title {
+    text-align: center;
+  }
+  .main__calendar-title h4 {
+    color: #cc1b00;
+  }
   .main__calendar-btn {
     display: none;
   }
