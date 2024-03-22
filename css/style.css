@@ -301,12 +301,10 @@ p {
   margin-top: 60px;
 }
 .main__calendar-title {
-  text-align: center;
   margin-bottom: 30px;
 }
 .main__calendar-title h4 {
   font-size: 1.7em;
-  color: #cc1b00;
 }
 .main__calendar-btn {
   display: flex;
@@ -357,6 +355,70 @@ p {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .main__calendar {
+    margin-top: 60px;
+  }
+  .main__calendar-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .main__calendar-title h4 {
+    font-size: 1.7em;
+    color: #cc1b00;
+  }
+  .main__calendar-btn {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 40px;
+  }
+  .main__calendar-btn button {
+    width: 135px;
+    padding: 6px 15px 6px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #cc1b00;
+  }
+  .main__calendar-btn button:hover {
+    background-color: #cc1b00;
+    color: white;
+  }
+  .main__calendar-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .main__calendar-container-img {
+    width: 100%;
+  }
+  .main__calendar-container-img img {
+    width: 100%;
+    height: auto;
+  }
+  .main__calendar-container-desc-1 h2 {
+    display: flex;
+    width: 85%;
+  }
+  .main__calendar-container-desc-2 {
+    color: #646464;
+    margin-top: 50px;
+  }
+  .main__calendar-container-desc-2-text1 {
+    margin-bottom: -15px;
+  }
+  .main__calendar-container-desc-2-text2 {
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__calendar-container-desc-2-text2 p:nth-child(2) {
+    color: #cc1b00;
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 600px) {
   .main__calendar {
     margin-top: 60px;
@@ -456,6 +518,44 @@ p {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .main__online {
+    margin-top: 60px;
+  }
+  .main__online-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .main__online-container-img {
+    width: 100%;
+  }
+  .main__online-container-img img {
+    width: 100%;
+    height: auto;
+  }
+  .main__online-container-desc-1 h2 {
+    display: flex;
+    width: 85%;
+  }
+  .main__online-container-desc-2 {
+    color: #646464;
+    margin-top: 50px;
+  }
+  .main__online-container-desc-2-text1 {
+    margin-bottom: -15px;
+  }
+  .main__online-container-desc-2-text2 {
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__online-container-desc-2-text2 p:nth-child(2) {
+    color: #cc1b00;
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 600px) {
   .main__online {
     margin-top: 60px;
