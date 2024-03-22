@@ -225,6 +225,13 @@ p {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .item1 h2,
+  .item2 h2,
+  .item3 h2 {
+    font-size: 2em;
+  }
+}
 @media screen and (max-width: 600px) {
   .main__carousel {
     padding: 0;
