@@ -33,22 +33,23 @@
   }
 
   &-container {
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
 
     &-img {
       img {
-        width: 100%;
+        width: 450px;
         height: auto;
       }
     }
 
     &-desc {
       &-1 {
-        p {
-          color: $text;
-          width: 550px;
+        h2 {
+          display: flex;
+          width: 85%;
         }
       }
 
@@ -101,7 +102,7 @@
 
     &-container {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       gap: 20px;
 
       &-img {
