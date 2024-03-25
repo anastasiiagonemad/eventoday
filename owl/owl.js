@@ -50,7 +50,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('#carouselThree').owlCarousel({
-    cenetr: true,
+    center: true,
     loop: true,
     margin: 20,
     nav: false,
@@ -65,6 +65,53 @@ $(document).ready(function () {
       },
       600: {
         items: 3,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselFour').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    dots: false,
+    mouseGrag: true,
+    autoplayTimeout: 2000,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselFive').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: false,
+    nav: true,
+    dots: false,
+    mouseGrag: true,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 1,
       },
     },
   });
