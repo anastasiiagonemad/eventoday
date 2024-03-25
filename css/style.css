@@ -2334,4 +2334,406 @@ footer {
 .buy__tickets-info-support #carouselFour div img {
   width: 80%;
   height: 50%;
+}
+
+.company__main-img {
+  background-image: url("../assets/other/company-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.company__main-img p {
+  font-weight: 600;
+  font-size: 1.275em;
+}
+.company__main-img p:first-child {
+  margin-top: 50px;
+}
+.company__main-img p:last-child {
+  margin-bottom: 100px;
+}
+
+.company__offer #carouselSix {
+  margin-top: 70px;
+}
+.company__offer #carouselSix .item {
+  background-color: #cc1b00;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 200px;
+  color: white;
+}
+.company__offer #carouselSix .item p:first-child {
+  margin-left: 10px;
+  font-size: 10em;
+  font-weight: 600;
+}
+.company__offer #carouselSix .item p:last-child {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.company__offer #carouselSix .owl-prev span,
+.company__offer #carouselSix .owl-next span {
+  background-color: #cc1b00;
+  padding: 0px 15px 4px 15px;
+  font-size: 2em;
+  border-radius: 50px;
+  color: white;
+}
+.company__offer #carouselSix .owl-nav {
+  position: absolute;
+  right: 0;
+  bottom: 105%;
+  left: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .company__offer #carouselSix {
+    margin-top: 70px;
+  }
+  .company__offer #carouselSix .item {
+    background-color: #cc1b00;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 220px;
+    color: white;
+  }
+  .company__offer #carouselSix .item p:first-child {
+    margin-left: 10px;
+    font-size: 10em;
+    font-weight: 600;
+  }
+  .company__offer #carouselSix .item p:last-child {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .company__offer #carouselSix .owl-prev span,
+  .company__offer #carouselSix .owl-next span {
+    background-color: #646464;
+    padding: 0px 15px 4px 15px;
+    font-size: 2em;
+    border-radius: 50px;
+    color: white;
+  }
+  .company__offer #carouselSix .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+    left: 60%;
+  }
+}
+.company__formats-icons {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .company__formats-icons {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+.company__tech-container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
+}
+.company__tech-container img {
+  width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .company__tech-title {
+    text-align: center;
+  }
+  .company__tech-container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 40px;
+  }
+  .company__tech-container img {
+    width: 200px;
+  }
+}
+.company__team-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
+}
+.company__team-container-item {
+  text-align: center;
+}
+.company__team-container-item img {
+  width: 180px;
+}
+.company__team-container-item p {
+  margin-top: -10px;
+  color: #cc1b00;
+}
+
+#carouselTen {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .company__team-title {
+    text-align: center;
+  }
+  .company__team-container {
+    display: none;
+  }
+  #carouselTen {
+    display: block;
+    text-align: center;
+  }
+  #carouselTen .item {
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 15px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+  }
+  #carouselTen .item img {
+    width: 150px;
+  }
+  #carouselTen .item h4 {
+    margin-top: -10%;
+  }
+  #carouselTen .item p {
+    color: #cc1b00;
+    margin-top: -20%;
+  }
+  #carouselTen .owl-prev span,
+  #carouselTen .owl-next span {
+    background-color: #646464;
+    padding: 0px 15px 4px 15px;
+    font-size: 2em;
+    border-radius: 50px;
+    color: white;
+  }
+  #carouselTen .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+    left: 60%;
+  }
+}
+.company__place-untitle {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-wrap: wrap;
+}
+.company__place-untitle h3 {
+  color: #808080;
+}
+.company__place #carouselSeven .item img,
+.company__place #carouselEight .item img {
+  border-radius: 15px;
+  height: 300px;
+}
+.company__place #carouselSeven .owl-prev span,
+.company__place #carouselSeven .owl-next span,
+.company__place #carouselEight .owl-prev span,
+.company__place #carouselEight .owl-next span {
+  background-color: #cc1b00;
+  padding: 0px 15px 4px 15px;
+  font-size: 2em;
+  border-radius: 50px;
+  color: white;
+  margin-right: 10px;
+}
+.company__place #carouselSeven .owl-nav,
+.company__place #carouselEight .owl-nav {
+  position: absolute;
+  right: 0;
+  bottom: 108%;
+  left: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .company__place {
+    padding: 0;
+  }
+  .company__place-title {
+    text-align: center;
+  }
+  .company__place-untitle {
+    position: absolute;
+    z-index: 2;
+    margin-top: 250px;
+    margin-left: 10px;
+  }
+  .company__place-untitle h3 {
+    color: white;
+    font-size: 0.7em;
+    text-wrap: wrap;
+    font-weight: 400;
+  }
+  .company__place #carouselSeven,
+  .company__place #carouselEight {
+    margin-bottom: 30px;
+  }
+  .company__place #carouselSeven .item img,
+  .company__place #carouselEight .item img {
+    border-radius: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .company__place #carouselSeven .owl-prev span,
+  .company__place #carouselSeven .owl-next span,
+  .company__place #carouselEight .owl-prev span,
+  .company__place #carouselEight .owl-next span {
+    background-color: #cc1b00;
+    padding: 0px 15px 4px 15px;
+    font-size: 2em;
+    border-radius: 50px;
+    color: white;
+    margin-right: 10px;
+  }
+  .company__place #carouselSeven .owl-nav,
+  .company__place #carouselEight .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 80%;
+    left: 70%;
+  }
+}
+.company__contacts-req {
+  text-align: center;
+}
+.company__contacts-req p {
+  font-size: 0.875em;
+}
+.company__contacts-req a {
+  color: #cc1b00;
+  text-decoration: underline;
+}
+.company__contacts-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.company__contacts-container-item h4 {
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+.company__contacts-container-item p {
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 600px) {
+  .company__contacts {
+    display: none;
+  }
+}
+.company-data-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.company-data-title h3 {
+  color: #cc1b00;
+}
+.company-data-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.company-data-inputs input {
+  padding: 10px;
+  border: 2px solid #cc1b00;
+  border-radius: 10px;
+}
+.company-data-inputs input::-moz-placeholder {
+  font-size: 0.8em;
+  font-family: "IBX400", sans-serif;
+}
+.company-data-inputs input::placeholder {
+  font-size: 0.8em;
+  font-family: "IBX400", sans-serif;
+}
+.company-data-inputs button {
+  padding: 10px 20px 10px 20px;
+  background-color: #cc1b00;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 0.7em;
+  font-family: "IBX400", Arial, Helvetica, sans-serif;
+}
+.company-data-agree {
+  margin-top: 30px;
+  text-align: center;
+}
+.company-data-agree p {
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 600px) {
+  .company-data {
+    display: none;
+  }
+}
+.company__partners-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.company__partners #carouselNine .item {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.company__partners #carouselNine .item img {
+  width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .company__partners-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .company__partners #carouselNine .item {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  .company__partners #carouselNine .item img {
+    width: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */

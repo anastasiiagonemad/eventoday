@@ -116,3 +116,121 @@ $(document).ready(function () {
     },
   });
 });
+
+$(document).ready(function () {
+  $('#carouselSix').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: false,
+    nav: true,
+    dots: false,
+    mouseGrag: true,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselSeven').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: false,
+    nav: true,
+    dots: false,
+    mouseGrag: true,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselEight').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: false,
+    nav: true,
+    dots: false,
+    mouseGrag: true,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselNine').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    nav: false,
+    dots: false,
+    mouseGrag: true,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 3,
+      },
+      800: {
+        items: 6,
+      },
+      1000: {
+        items: 8,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselTen').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: false,
+    nav: true,
+    dots: false,
+    mouseGrag: true,
+    touchDrag: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 1,
+      },
+    },
+  });
+});
