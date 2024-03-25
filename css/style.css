@@ -1636,26 +1636,30 @@ footer {
   padding: 0;
 }
 .buy__tickets-line-block {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   background-color: #cc1b00;
-  height: 80px;
+  height: 50px;
   padding: 0;
 }
 .buy__tickets-line-block p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  padding-top: 35px;
-  animation: text 32s infinite linear;
-  text-wrap: wrap;
+  animation: text 20s infinite linear;
+  text-wrap: nowrap;
 }
 
 @keyframes text {
   from {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 .buy__tickets-form {

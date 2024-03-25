@@ -2,25 +2,29 @@
   margin-top: 100px;
   padding: 0;
   &-block {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     background-color: $main-red;
-    height: 80px;
+    height: 50px;
     padding: 0;
     p {
+      position: absolute;
+      width: 100%;
+      text-align: center;
       text-align: center;
       color: #fff;
       text-transform: uppercase;
-      padding-top: 35px;
-      animation: text 32s infinite linear;
-      text-wrap: wrap;
+      animation: text 20s infinite linear;
+      text-wrap: nowrap;
     }
   }
 }
 @keyframes text {
   from {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
