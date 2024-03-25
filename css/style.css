@@ -2474,12 +2474,13 @@ footer {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
     -moz-column-gap: 20px;
          column-gap: 20px;
     row-gap: 40px;
   }
   .company__tech-container img {
-    width: 200px;
+    width: 150px;
   }
 }
 .company__team-container {
