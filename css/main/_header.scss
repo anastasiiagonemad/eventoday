@@ -15,8 +15,8 @@
       display: flex;
       text-wrap: nowrap;
       justify-content: center;
-      gap: 10%;
-      width: 100%;
+      gap: 6%;
+      width: 90%;
 
       li {
         a {
@@ -54,7 +54,7 @@
   }
   .main__reg {
     gap: 0;
-    margin-left: 45%;
+    margin-left: 50%;
   }
   .menu {
     display: block;
@@ -140,5 +140,11 @@
   }
   .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__reg {
+    margin-left: 30%;
   }
 }

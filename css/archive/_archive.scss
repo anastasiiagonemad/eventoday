@@ -1,0 +1,156 @@
+.archive {
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__2023,
+  &__2022,
+  &__2021,
+  &__2020 {
+    &-title {
+      p {
+        color: $main-red;
+        font-weight: 600;
+      }
+    }
+    &-links {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        li {
+          a {
+            color: black;
+          }
+          a:hover {
+            color: $main-red;
+          }
+        }
+      }
+    }
+
+    &-container {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+
+      &-1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &-img {
+          img {
+            width: 250px;
+          }
+        }
+        &-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          line-height: 1.5;
+
+          p:first-child {
+            font-size: 1.3em;
+          }
+          p:last-child {
+            color: $footer;
+          }
+        }
+      }
+
+      &-2 {
+        display: flex;
+        justify-content: start;
+        button {
+          background-color: white;
+          border: none;
+          a {
+            color: $main-red;
+            font-weight: 400;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .archive {
+    &__title {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    &__2023,
+    &__2022,
+    &__2021,
+    &__2020 {
+      background-color: lightgray;
+      padding: 10px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      &-title {
+        p {
+          text-align: center;
+          color: $main-red;
+          font-weight: 600;
+        }
+      }
+      &-links {
+        display: none;
+      }
+
+      &-container {
+        display: block;
+
+        &-1 {
+          display: block;
+          gap: 0;
+
+          &-img {
+            display: flex;
+            justify-content: center;
+            img {
+              width: 100%;
+              border-radius: 27px;
+            }
+          }
+          &-text {
+            display: block;
+            line-height: 1.5;
+
+            p:first-child {
+              font-size: 1em;
+            }
+            p:last-child {
+              font-size: 0.875em;
+              color: $footer;
+            }
+          }
+        }
+
+        &-2 {
+          margin-top: -10%;
+          display: flex;
+          justify-content: flex-end;
+          button {
+            background-color: lightgray;
+            border: 1.5px solid $main-red;
+            padding: 5px;
+            border-radius: 10px;
+            a {
+              color: black;
+              font-weight: 400;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

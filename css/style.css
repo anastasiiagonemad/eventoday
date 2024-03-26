@@ -56,8 +56,8 @@ p {
   display: flex;
   text-wrap: nowrap;
   justify-content: center;
-  gap: 10%;
-  width: 100%;
+  gap: 6%;
+  width: 90%;
 }
 .main__links ul li a {
   font-size: 0.875em;
@@ -88,7 +88,7 @@ p {
   }
   .main__reg {
     gap: 0;
-    margin-left: 45%;
+    margin-left: 50%;
   }
   .menu {
     display: block;
@@ -173,6 +173,11 @@ p {
   }
   .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 400px) {
+  .main__reg {
+    margin-left: 30%;
   }
 }
 .main__carousel {
@@ -946,7 +951,7 @@ footer {
   color: white;
 }
 .footer__container-1 {
-  margin-top: 10px;
+  margin: 10px;
 }
 .footer__container-1 div:nth-child(2) div:first-child {
   width: 230px;
@@ -967,9 +972,10 @@ footer {
 .footer__container-2 div:first-child ul {
   display: flex;
   margin-top: 20px;
-  justify-content: space-between;
-  gap: 70px;
-  margin-right: 50px;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 100px;
+  flex-wrap: wrap;
 }
 .footer__container-2 div:first-child ul li a {
   text-transform: uppercase;
@@ -2736,5 +2742,127 @@ footer {
   }
   .company__partners #carouselNine .item img {
     width: 150px;
+  }
+}
+.archive__title {
+  margin-bottom: 50px;
+}
+.archive__2023-title p, .archive__2022-title p, .archive__2021-title p, .archive__2020-title p {
+  color: #cc1b00;
+  font-weight: 600;
+}
+.archive__2023-links ul, .archive__2022-links ul, .archive__2021-links ul, .archive__2020-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.archive__2023-links ul li a, .archive__2022-links ul li a, .archive__2021-links ul li a, .archive__2020-links ul li a {
+  color: black;
+}
+.archive__2023-links ul li a:hover, .archive__2022-links ul li a:hover, .archive__2021-links ul li a:hover, .archive__2020-links ul li a:hover {
+  color: #cc1b00;
+}
+.archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.archive__2023-container-1, .archive__2022-container-1, .archive__2021-container-1, .archive__2020-container-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.archive__2023-container-1-img img, .archive__2022-container-1-img img, .archive__2021-container-1-img img, .archive__2020-container-1-img img {
+  width: 250px;
+}
+.archive__2023-container-1-text, .archive__2022-container-1-text, .archive__2021-container-1-text, .archive__2020-container-1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.archive__2023-container-1-text p:first-child, .archive__2022-container-1-text p:first-child, .archive__2021-container-1-text p:first-child, .archive__2020-container-1-text p:first-child {
+  font-size: 1.3em;
+}
+.archive__2023-container-1-text p:last-child, .archive__2022-container-1-text p:last-child, .archive__2021-container-1-text p:last-child, .archive__2020-container-1-text p:last-child {
+  color: #808080;
+}
+.archive__2023-container-2, .archive__2022-container-2, .archive__2021-container-2, .archive__2020-container-2 {
+  display: flex;
+  justify-content: start;
+}
+.archive__2023-container-2 button, .archive__2022-container-2 button, .archive__2021-container-2 button, .archive__2020-container-2 button {
+  background-color: white;
+  border: none;
+}
+.archive__2023-container-2 button a, .archive__2022-container-2 button a, .archive__2021-container-2 button a, .archive__2020-container-2 button a {
+  color: #cc1b00;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .archive__title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .archive__2023, .archive__2022, .archive__2021, .archive__2020 {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+  .archive__2023-title p, .archive__2022-title p, .archive__2021-title p, .archive__2020-title p {
+    text-align: center;
+    color: #cc1b00;
+    font-weight: 600;
+  }
+  .archive__2023-links, .archive__2022-links, .archive__2021-links, .archive__2020-links {
+    display: none;
+  }
+  .archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
+    display: block;
+  }
+  .archive__2023-container-1, .archive__2022-container-1, .archive__2021-container-1, .archive__2020-container-1 {
+    display: block;
+    gap: 0;
+  }
+  .archive__2023-container-1-img, .archive__2022-container-1-img, .archive__2021-container-1-img, .archive__2020-container-1-img {
+    display: flex;
+    justify-content: center;
+  }
+  .archive__2023-container-1-img img, .archive__2022-container-1-img img, .archive__2021-container-1-img img, .archive__2020-container-1-img img {
+    width: 100%;
+    border-radius: 27px;
+  }
+  .archive__2023-container-1-text, .archive__2022-container-1-text, .archive__2021-container-1-text, .archive__2020-container-1-text {
+    display: block;
+    line-height: 1.5;
+  }
+  .archive__2023-container-1-text p:first-child, .archive__2022-container-1-text p:first-child, .archive__2021-container-1-text p:first-child, .archive__2020-container-1-text p:first-child {
+    font-size: 1em;
+  }
+  .archive__2023-container-1-text p:last-child, .archive__2022-container-1-text p:last-child, .archive__2021-container-1-text p:last-child, .archive__2020-container-1-text p:last-child {
+    font-size: 0.875em;
+    color: #808080;
+  }
+  .archive__2023-container-2, .archive__2022-container-2, .archive__2021-container-2, .archive__2020-container-2 {
+    margin-top: -10%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .archive__2023-container-2 button, .archive__2022-container-2 button, .archive__2021-container-2 button, .archive__2020-container-2 button {
+    background-color: lightgray;
+    border: 1.5px solid #cc1b00;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .archive__2023-container-2 button a, .archive__2022-container-2 button a, .archive__2021-container-2 button a, .archive__2020-container-2 button a {
+    color: black;
+    font-weight: 400;
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@ footer {
   color: white;
 
   &-1 {
-    margin-top: 10px;
+    margin: 10px;
     div:nth-child(2) {
       div:first-child {
         width: 230px;
@@ -37,9 +37,10 @@ footer {
       ul {
         display: flex;
         margin-top: 20px;
-        justify-content: space-between;
-        gap: 70px;
-        margin-right: 50px;
+        justify-content: center;
+        gap: 30px;
+        margin-right: 100px;
+        flex-wrap: wrap;
         li {
           a {
             text-transform: uppercase;
