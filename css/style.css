@@ -2755,11 +2755,11 @@ footer {
   }
   .company__offer #carouselSix .item p:first-child {
     margin-left: 10px;
-    font-size: 10em;
+    font-size: 9em;
     font-weight: 600;
   }
   .company__offer #carouselSix .item p:last-child {
-    font-size: 1.3em;
+    font-size: 1.0875em;
     font-weight: 600;
     margin-right: 10px;
   }
