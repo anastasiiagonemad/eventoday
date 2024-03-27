@@ -1,86 +1,169 @@
-//timer for buytickets.html
+//calendar index.html
 document.addEventListener('DOMContentLoaded', function () {
-  const month = 4;
-  const day = 1;
+  const date1 = document.querySelector('.APR22');
+  const mob1 = document.querySelector('.APR22-mob');
 
-  const deadline = new Date(2024, month, day);
+  const date2 = document.querySelector('.APR25');
+  const mob2 = document.querySelector('.APR25-mob');
 
-  let timerId = null;
+  const date3 = document.querySelector('.MAY22');
+  const mob3 = document.querySelector('.MAY22-mob');
 
-  function declensionNum(num, words) {
-    return words[
-      num % 100 > 4 && num % 100 < 20
-        ? 2
-        : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]
-    ];
-  }
+  const date4 = document.querySelector('.MAY30');
+  const mob4 = document.querySelector('.MAY30-mob');
 
-  function countdownTimer() {
-    const diff = deadline - new Date();
-    if (diff <= 0) {
-      clearInterval(timerId);
-    }
-    const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
-    const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
-    const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
-    const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
-    $days.textContent = days < 10 ? '0' + days : days;
-    $hours.textContent = hours < 10 ? '0' + hours : hours;
-    $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-    $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-    $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
-    $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-    $minutes.dataset.title = declensionNum(minutes, [
-      'минута',
-      'минуты',
-      'минут',
-    ]);
-    $seconds.dataset.title = declensionNum(seconds, [
-      'секунда',
-      'секунды',
-      'секунд',
-    ]);
-  }
-  const $days = document.querySelector('.timer__days');
-  const $hours = document.querySelector('.timer__hours');
-  const $minutes = document.querySelector('.timer__minutes');
-  const $seconds = document.querySelector('.timer__seconds');
+  const date5 = document.querySelector('.SEP16');
+  const mob5 = document.querySelector('.SEP16-mob');
 
-  countdownTimer();
-  timerId = setInterval(countdownTimer, 1000);
-});
+  const date6 = document.querySelector('.SEP20');
+  const mob6 = document.querySelector('.SEP20-mob');
 
-//open sposor description in sronsor.html
-const open1 = document.querySelector('.open1');
-const open2 = document.querySelector('.open2');
-const open3 = document.querySelector('.open3');
-const close = document.querySelectorAll('.close');
-const text1 = document.querySelector('.text1');
-const text2 = document.querySelector('.text2');
-const text3 = document.querySelector('.text3');
+  const date7 = document.querySelector('.OCT24');
+  const mob7 = document.querySelector('.OCT24-mob');
 
-open1.addEventListener('click', () => {
-  text1.classList.add('active');
-  open1.style.display = 'none';
-});
+  const text1 = document.querySelector('.date1');
+  const text2 = document.querySelector('.date2');
+  const text3 = document.querySelector('.date3');
+  const text4 = document.querySelector('.date4');
+  const text5 = document.querySelector('.date5');
+  const text6 = document.querySelector('.date6');
+  const text7 = document.querySelector('.date7');
 
-open2.addEventListener('click', () => {
-  text2.classList.add('active');
-  open2.style.display = 'none';
-});
+  date1.addEventListener('click', () => {
+    text1.style.display = 'flex';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+  date2.addEventListener('click', () => {
+    text2.style.display = 'flex';
+    text1.style.display = 'none';
+    text3.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
 
-open3.addEventListener('click', () => {
-  text3.classList.add('active');
-  open3.style.display = 'none';
-});
+  date3.addEventListener('click', () => {
+    text3.style.display = 'flex';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
 
-close.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    text1.classList.remove('active');
-    text2.classList.remove('active');
-    text3.classList.remove('active');
-    open1.style.display = 'block';
-    open2.style.display = 'block';
-    open3.style.display = 'block';
+  date4.addEventListener('click', () => {
+    text4.style.display = 'flex';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+
+  date5.addEventListener('click', () => {
+    text4.style.display = 'none';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'flex';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+
+  date6.addEventListener('click', () => {
+    text4.style.display = 'none';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'flex';
+    text7.style.display = 'none';
+  });
+
+  date7.addEventListener('click', () => {
+    text4.style.display = 'none';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'flex';
+  });
+
+  mob1.addEventListener('click', () => {
+    text1.style.display = 'flex';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+  mob2.addEventListener('click', () => {
+    text2.style.display = 'flex';
+    text1.style.display = 'none';
+    text3.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+
+  mob3.addEventListener('click', () => {
+    text3.style.display = 'flex';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text4.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+
+  mob4.addEventListener('click', () => {
+    text4.style.display = 'flex';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+
+  mob5.addEventListener('click', () => {
+    text4.style.display = 'none';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'flex';
+    text6.style.display = 'none';
+    text7.style.display = 'none';
+  });
+
+  mob6.addEventListener('click', () => {
+    text4.style.display = 'none';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'flex';
+    text7.style.display = 'none';
+  });
+
+  mob7.addEventListener('click', () => {
+    text4.style.display = 'none';
+    text1.style.display = 'none';
+    text2.style.display = 'none';
+    text3.style.display = 'none';
+    text5.style.display = 'none';
+    text6.style.display = 'none';
+    text7.style.display = 'flex';
   });
 });
