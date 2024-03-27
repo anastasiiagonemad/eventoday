@@ -241,36 +241,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#carouselEleven').owlCarousel({
     loop: true,
-    margin: 0,
-    nav: false,
-    autoplay: true,
-    dots: false,
-    mouseGrag: true,
-    autoplayTimeout: 1000,
-    touchDrag: true,
-    smartSpeed: 2000,
-    slideTransition: 'linear',
-    animateIn: 'linear',
-    animateOut: 'linear',
-    autoplayHoverPause: true,
-    responsive: {
-      //Адаптивность.
-      0: {
-        items: 3,
-      },
-      600: {
-        items: 4,
-      },
-      1000: {
-        items: 7,
-      },
-    },
-  });
-});
-
-$(document).ready(function () {
-  $('#carouselTwelve').owlCarousel({
-    loop: true,
+    stagePadding: 50,
     margin: 0,
     nav: false,
     autoplay: true,
@@ -286,10 +257,41 @@ $(document).ready(function () {
     responsive: {
       //Адаптивность.
       0: {
-        items: 3,
+        items: 2,
       },
       600: {
-        items: 4,
+        items: 3,
+      },
+      1000: {
+        items: 7,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselTwelve').owlCarousel({
+    loop: true,
+    stagePadding: 50,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    dots: false,
+    mouseGrag: true,
+    autoplayTimeout: 1000,
+    touchDrag: true,
+    smartSpeed: 3000,
+    slideTransition: 'linear',
+    animateIn: 'linear',
+    animateOut: 'linear',
+    autoplayHoverPause: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
       },
       1000: {
         items: 7,
