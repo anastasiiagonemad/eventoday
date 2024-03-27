@@ -17,7 +17,8 @@
     gap: 3px;
     padding: 40px;
     button {
-      width: 135px;
+      text-wrap: nowrap;
+      width: 100%;
       padding: 6px 15px 6px 15px;
       border: none;
       border-radius: 10px;
@@ -89,8 +90,10 @@
       justify-content: center;
       gap: 3px;
       padding: 40px;
+
       button {
-        width: 135px;
+        text-wrap: wrap;
+        width: 100%;
         padding: 6px 15px 6px 15px;
         border: none;
         border-radius: 10px;
@@ -145,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .main__calendar {
     margin-top: 60px;
     &-title {
@@ -164,7 +167,7 @@
       div {
         button {
           text-wrap: nowrap;
-          width: 120px;
+          width: 98%;
           padding: 6px 15px 6px 15px;
           border: none;
           border-radius: 10px;
@@ -194,6 +197,7 @@
       &-desc {
         &-1 {
           h2 {
+            width: 100%;
             margin-top: 20px;
             text-align: center;
           }

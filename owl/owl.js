@@ -248,8 +248,10 @@ $(document).ready(function () {
     mouseGrag: true,
     autoplayTimeout: 1000,
     touchDrag: true,
-    smartSpeed: 3000,
+    smartSpeed: 2000,
     slideTransition: 'linear',
+    animateIn: 'linear',
+    animateOut: 'linear',
     autoplayHoverPause: true,
     responsive: {
       //Адаптивность.
@@ -278,6 +280,8 @@ $(document).ready(function () {
     touchDrag: true,
     smartSpeed: 3000,
     slideTransition: 'linear',
+    animateIn: 'linear',
+    animateOut: 'linear',
     autoplayHoverPause: true,
     responsive: {
       //Адаптивность.
