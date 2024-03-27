@@ -43,6 +43,10 @@
   }
 }
 
+.buy__tickets-top-mob {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .buy__tickets-top {
     display: none;

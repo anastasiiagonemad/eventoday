@@ -1,30 +1,10 @@
 .buy__tickets-line {
-  margin-top: 100px;
+  margin-top: 30px;
   padding: 0;
-  &-block {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: $main-red;
-    height: 50px;
-    padding: 0;
-    p {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      text-align: center;
-      color: #fff;
-      text-transform: uppercase;
-      animation: text 20s infinite linear;
-      text-wrap: nowrap;
-    }
-  }
-}
-@keyframes text {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+  background-color: $main-red;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'IBX400', Arial, Helvetica, sans-serif;
 }

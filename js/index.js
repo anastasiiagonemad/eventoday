@@ -1,9 +1,9 @@
 //timer for buytickets.html
 document.addEventListener('DOMContentLoaded', function () {
-  const newLocal = 4;
-  const newLocal_1 = 1;
+  const month = 4;
+  const day = 1;
 
-  const deadline = new Date(2024, newLocal, newLocal_1);
+  const deadline = new Date(2024, month, day);
 
   let timerId = null;
 

@@ -30,9 +30,6 @@ $(document).ready(function () {
     center: true,
     nav: true,
     dots: false,
-    autoplay: true,
-    smartSpeed: 1000,
-    autoplayTimeout: 3000,
     responsive: {
       //Адаптивность.
       0: {
@@ -50,9 +47,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('#carouselThree').owlCarousel({
-    center: true,
+    center: false,
     loop: true,
-    margin: 20,
+    margin: 0,
     nav: false,
     autoplay: false,
     dots: false,
@@ -62,6 +59,9 @@ $(document).ready(function () {
       //Адаптивность.
       0: {
         items: 2,
+      },
+      450: {
+        items: 3,
       },
       600: {
         items: 3,
@@ -80,6 +80,9 @@ $(document).ready(function () {
     mouseGrag: true,
     autoplayTimeout: 2000,
     touchDrag: true,
+    smartSpeed: 3000,
+    slideTransition: 'linear',
+    autoplayHoverPause: true,
     responsive: {
       //Адаптивность.
       0: {
@@ -230,6 +233,62 @@ $(document).ready(function () {
       },
       800: {
         items: 1,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselEleven').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    dots: false,
+    mouseGrag: true,
+    autoplayTimeout: 1000,
+    touchDrag: true,
+    smartSpeed: 3000,
+    slideTransition: 'linear',
+    autoplayHoverPause: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 3,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 7,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $('#carouselTwelve').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    dots: false,
+    mouseGrag: true,
+    autoplayTimeout: 1000,
+    touchDrag: true,
+    smartSpeed: 3000,
+    slideTransition: 'linear',
+    autoplayHoverPause: true,
+    responsive: {
+      //Адаптивность.
+      0: {
+        items: 3,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 7,
       },
     },
   });
