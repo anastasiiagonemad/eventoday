@@ -1,0 +1,181 @@
+.partner__form-1 {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      width: 100%;
+      p:first-child {
+        width: 80%;
+        font-size: 1.5em;
+      }
+      p:last-child {
+        line-height: 1.7;
+        font-size: 0.875em;
+        width: 50%;
+      }
+    }
+
+    &-data {
+      width: 100%;
+      input {
+        margin-bottom: 30px;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+      input::placeholder {
+        color: black;
+      }
+
+      .flex {
+        display: flex;
+        gap: 10px;
+      }
+
+      button {
+        background-color: $main-red;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 25px;
+      }
+
+      p {
+        font-size: 0.7em;
+        color: $footer;
+
+        a {
+          color: $footer;
+          text-decoration: underline;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.partner__form-2 {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      width: 100%;
+      p:first-child {
+        width: 80%;
+        font-size: 1.5em;
+      }
+      p:last-child {
+        line-height: 1.7;
+        font-size: 0.875em;
+        width: 50%;
+      }
+    }
+
+    &-data {
+      width: 100%;
+      input {
+        margin-bottom: 30px;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+      input::placeholder {
+        color: black;
+      }
+
+      .flex {
+        display: flex;
+        gap: 10px;
+      }
+
+      button {
+        background-color: $main-red;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 25px;
+      }
+
+      p {
+        font-size: 0.7em;
+        color: $footer;
+
+        a {
+          color: $footer;
+          text-decoration: underline;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner__form-1 {
+    display: none;
+  }
+
+  .partner__form-2 {
+    margin-top: -100px;
+    &-container {
+      display: block;
+
+      &-text {
+        text-align: center;
+        width: 100%;
+        p:first-child {
+          width: 100%;
+          font-size: 1.5em;
+        }
+        p:last-child {
+          line-height: 1.7;
+          font-size: 0.875em;
+          width: 100%;
+        }
+      }
+
+      &-data {
+        text-align: center;
+        width: 100%;
+        input {
+          border-radius: 10px;
+          margin-bottom: 20px;
+          padding: 10px;
+          width: 100%;
+          border: 2px solid $main-red;
+        }
+        input::placeholder {
+          color: $footer;
+        }
+
+        .flex {
+          display: block;
+          gap: 10px;
+        }
+
+        button {
+          background-color: $main-red;
+          padding: 10px 20px 10px 20px;
+          color: white;
+          border: none;
+          border-radius: 25px;
+        }
+
+        p {
+          font-size: 0.7em;
+          color: $footer;
+
+          a {
+            color: $footer;
+            text-decoration: underline;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
