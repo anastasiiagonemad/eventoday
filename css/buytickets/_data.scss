@@ -12,6 +12,15 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    .data_name-error,
+    .data_tel-error,
+    .data_email-error {
+      font-size: 0.5em;
+      width: 150px;
+      text-align: center;
+      color: $main-red;
+      padding-top: 10px;
+    }
 
     input {
       padding: 10px;

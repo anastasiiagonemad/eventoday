@@ -53,6 +53,13 @@
       }
     }
   }
+
+  .error-name,
+  .error-tel,
+  .error-email {
+    color: $main-red;
+    font-size: 0.6em;
+  }
 }
 
 @media screen and (max-width: 600px) {

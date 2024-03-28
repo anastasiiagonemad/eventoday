@@ -25,6 +25,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('#carouselTwo').owlCarousel({
+    center: true,
     loop: true,
     margin: 30,
     center: true,
@@ -202,6 +203,11 @@ $(document).ready(function () {
     dots: false,
     mouseGrag: true,
     touchDrag: true,
+    smartSpeed: 3000,
+    slideTransition: 'linear',
+    animateIn: 'linear',
+    animateOut: 'linear',
+    autoplayHoverPause: true,
     responsive: {
       //Адаптивность.
       0: {

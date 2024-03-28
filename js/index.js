@@ -1,169 +1,87 @@
-//calendar index.html
+// //calendar index.html
 document.addEventListener('DOMContentLoaded', function () {
-  const date1 = document.querySelector('.APR22');
-  const mob1 = document.querySelector('.APR22-mob');
+  const dates = [
+    '.APR22',
+    '.APR25',
+    '.MAY22',
+    '.MAY30',
+    '.SEP16',
+    '.SEP20',
+    '.OCT24',
+  ];
+  const mobs = [
+    '.APR22-mob',
+    '.APR25-mob',
+    '.MAY22-mob',
+    '.MAY30-mob',
+    '.SEP16-mob',
+    '.SEP20-mob',
+    '.OCT24-mob',
+  ];
+  const texts = [
+    '.date1',
+    '.date2',
+    '.date3',
+    '.date4',
+    '.date5',
+    '.date6',
+    '.date7',
+  ];
 
-  const date2 = document.querySelector('.APR25');
-  const mob2 = document.querySelector('.APR25-mob');
-
-  const date3 = document.querySelector('.MAY22');
-  const mob3 = document.querySelector('.MAY22-mob');
-
-  const date4 = document.querySelector('.MAY30');
-  const mob4 = document.querySelector('.MAY30-mob');
-
-  const date5 = document.querySelector('.SEP16');
-  const mob5 = document.querySelector('.SEP16-mob');
-
-  const date6 = document.querySelector('.SEP20');
-  const mob6 = document.querySelector('.SEP20-mob');
-
-  const date7 = document.querySelector('.OCT24');
-  const mob7 = document.querySelector('.OCT24-mob');
-
-  const text1 = document.querySelector('.date1');
-  const text2 = document.querySelector('.date2');
-  const text3 = document.querySelector('.date3');
-  const text4 = document.querySelector('.date4');
-  const text5 = document.querySelector('.date5');
-  const text6 = document.querySelector('.date6');
-  const text7 = document.querySelector('.date7');
-
-  date1.addEventListener('click', () => {
-    text1.style.display = 'flex';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text4.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
-  date2.addEventListener('click', () => {
-    text2.style.display = 'flex';
-    text1.style.display = 'none';
-    text3.style.display = 'none';
-    text4.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
+  dates.forEach((date, index) => {
+    document.querySelector(date).addEventListener('click', function () {
+      texts.forEach((text) => {
+        document.querySelector(text).style.display = 'none';
+      });
+      document.querySelector(texts[index]).style.display = 'flex';
+    });
   });
 
-  date3.addEventListener('click', () => {
-    text3.style.display = 'flex';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text4.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
+  mobs.forEach((mob, index) => {
+    document.querySelector(mob).addEventListener('click', function () {
+      texts.forEach((text) => {
+        document.querySelector(text).style.display = 'none';
+      });
+      document.querySelector(texts[index]).style.display = 'flex';
+    });
   });
 
-  date4.addEventListener('click', () => {
-    text4.style.display = 'flex';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
+  //валидация формы index.html
+  document.querySelector('#main_data-btn').addEventListener('click', (e) => {
+    e.preventDefault();
 
-  date5.addEventListener('click', () => {
-    text4.style.display = 'none';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'flex';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
+    const main_name = document.querySelector('#main_name');
+    const main_tel = document.querySelector('#main_tel');
+    const main_email = document.querySelector('#main_email');
 
-  date6.addEventListener('click', () => {
-    text4.style.display = 'none';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'flex';
-    text7.style.display = 'none';
-  });
+    const errorName = document.querySelector('.error-name');
+    const errorTel = document.querySelector('.error-tel');
+    const errorEmail = document.querySelector('.error-email');
 
-  date7.addEventListener('click', () => {
-    text4.style.display = 'none';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'flex';
-  });
+    const nameReg = /^(?=.{2,30}$)+[A-Za-zА-Яа-я]+$/;
+    const telReg = /^[0-9]{7,11}$/;
+    const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/;
 
-  mob1.addEventListener('click', () => {
-    text1.style.display = 'flex';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text4.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
-  mob2.addEventListener('click', () => {
-    text2.style.display = 'flex';
-    text1.style.display = 'none';
-    text3.style.display = 'none';
-    text4.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
+    const validName = (value) => nameReg.test(value);
+    const validTel = (value) => telReg.test(value);
+    const validEmail = (value) => emailReg.test(value);
 
-  mob3.addEventListener('click', () => {
-    text3.style.display = 'flex';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text4.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
-
-  mob4.addEventListener('click', () => {
-    text4.style.display = 'flex';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
-
-  mob5.addEventListener('click', () => {
-    text4.style.display = 'none';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'flex';
-    text6.style.display = 'none';
-    text7.style.display = 'none';
-  });
-
-  mob6.addEventListener('click', () => {
-    text4.style.display = 'none';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'flex';
-    text7.style.display = 'none';
-  });
-
-  mob7.addEventListener('click', () => {
-    text4.style.display = 'none';
-    text1.style.display = 'none';
-    text2.style.display = 'none';
-    text3.style.display = 'none';
-    text5.style.display = 'none';
-    text6.style.display = 'none';
-    text7.style.display = 'flex';
+    if (
+      validName(main_name.value) &&
+      validTel(main_tel.value) &&
+      validEmail(main_email.value)
+    ) {
+      document.querySelector('.main__form-data').style.display = 'block';
+      document.querySelector('.main__form-data').style.fontSize = '2em';
+      document.querySelector('.main__form-data').innerText =
+        'Заявка успешно отправлена!';
+    } else if (!validName(main_name.value)) {
+      errorName.textContent =
+        'Введите Ваше имя используя толкько буквы русского или латинского алфавита';
+    } else if (!validTel(main_tel.value)) {
+      errorTel.textContent = 'Ввведите номер телефона в формате 81234567890';
+    } else if (!validEmail(main_email.value)) {
+      errorEmail.textContent = 'Введите Email в формате : example@ex.com';
+    }
   });
 });

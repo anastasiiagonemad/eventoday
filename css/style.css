@@ -388,13 +388,12 @@ p {
   color: #cc1b00;
   cursor: pointer;
 }
-
-.date2,
-.date3,
-.date4,
-.date5,
-.date6,
-.date7 {
+.main__calendar .date2,
+.main__calendar .date3,
+.main__calendar .date4,
+.main__calendar .date5,
+.main__calendar .date6,
+.main__calendar .date7 {
   display: none;
 }
 
@@ -890,6 +889,12 @@ p {
   color: grey;
   font-weight: 400;
   text-decoration: underline;
+}
+.main__form .error-name,
+.main__form .error-tel,
+.main__form .error-email {
+  color: #cc1b00;
+  font-size: 0.6em;
 }
 
 @media screen and (max-width: 600px) {
@@ -1807,13 +1812,21 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
+.buy__tickets-form-input .fio_error,
+.buy__tickets-form-input .email_error,
+.buy__tickets-form-input .tel_error {
+  font-size: 0.6em;
+  color: #cc1b00;
+  padding-bottom: 10px;
+}
 .buy__tickets-form-input label {
   color: #808080;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   margin-bottom: 7px;
 }
-.buy__tickets-form-input input {
+.buy__tickets-form-input input,
+.buy__tickets-form-input select {
   margin-bottom: 30px;
   align-self: center;
   width: 40%;
@@ -1821,6 +1834,10 @@ footer {
   border: 2px solid #cc1b00;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.buy__tickets-form-input select {
+  width: 43%;
+  color: #808080;
 }
 .buy__tickets-form-input input::-moz-placeholder {
   font-size: 0.8em;
@@ -1856,16 +1873,21 @@ footer {
 .buy__tickets-form-input-2-count {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .buy__tickets-form-input-2-count button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
   width: 10px;
   background-color: white;
   border: none;
   margin-right: 2px;
 }
 .buy__tickets-form-input-2-count input {
-  width: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 30px;
   height: 20px;
   border: 1.2px solid #cc1b00;
   border-radius: 5px;
@@ -1943,6 +1965,9 @@ footer {
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
+  .buy__tickets-form-input select {
+    width: 95%;
+  }
   .buy__tickets-form-input input::-moz-placeholder {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
@@ -1980,13 +2005,13 @@ footer {
     gap: 5px;
   }
   .buy__tickets-form-input-2-count button {
-    width: 10px;
+    width: 15px;
     background-color: white;
     border: none;
     margin-right: 2px;
   }
   .buy__tickets-form-input-2-count input {
-    width: 10px;
+    width: 15px;
     height: 20px;
     border: 1.2px solid #cc1b00;
     border-radius: 5px;
@@ -2159,6 +2184,15 @@ footer {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+}
+.buy__tickets-data-inputs .data_name-error,
+.buy__tickets-data-inputs .data_tel-error,
+.buy__tickets-data-inputs .data_email-error {
+  font-size: 0.5em;
+  width: 150px;
+  text-align: center;
+  color: #cc1b00;
+  padding-top: 10px;
 }
 .buy__tickets-data-inputs input {
   padding: 10px;
@@ -2634,6 +2668,11 @@ footer {
   font-family: "IBX600", Arial, Helvetica, sans-serif;
   font-size: 0.7em;
   border-radius: 25px;
+}
+.buy__tickets-take-program .programm-error {
+  text-align: center;
+  padding-top: 10px;
+  color: #cc1b00;
 }
 .buy__tickets-take-program p {
   text-align: center;

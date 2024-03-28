@@ -22,7 +22,6 @@
             <li><a href="company.html">О компании</a></li>
             <li><a href="archive.html">Архив</a></li>
             <li><a href="partner.html">Партнерам</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
         <div class="main__reg">
@@ -40,7 +39,6 @@
             <li><a class="menu-item" href="company.html">О компании</a></li>
             <li><a class="menu-item" href="archive.html">Архив</a></li>
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
-            <li><a class="menu-item" href="contacts.html">Контакты</a></li>
           </ul>
         </div>
       </section>
@@ -532,20 +530,24 @@
           <p>*Стоимость указана при регистрации до 25.03.24 г.</p>
         </div>
         <div class="buy__tickets-form-input">
-          <label for="option">Выберите вариант участия</label>
-          <input
-            id="option"
-            type="text"
-            placeholder="Пакет Делегат 20.000 руб. (НДС не обл.)"
-          />
+          <label for="fors-sess">Выберите вариант участия</label>
+          <select name="session" id="fors-sess" required>
+            <option value="delegat">Пакет "Делегат" 15.000 руб.</option>
+            <option value="partner">Пакет "Партнер" 65.000 руб.</option>
+            <option value="online">Пакет "On-line" 4.500 руб.</option>
+            <option value="material">Пакет "Материалы" 2.500 руб.</option>
+          </select>
           <label for="fio">ФИО</label>
-          <input id="fio" type="text" />
+          <div class="fio_error"></div>
+          <input id="fio" type="text" required/>
 
           <label for="email">Email</label>
-          <input id="email" type="email" />
+          <div class="email_error"></div>
+          <input id="email" type="email" required/>
 
           <label for="tel">Контакнтый телефон</label>
-          <input id="tel" type="tel" placeholder="🇷🇺 +7 (999) 999-99-99" />
+          <div class="tel_error"></div>
+          <input id="tel" type="tel" placeholder="🇷🇺 +7 (999) 999-99-99" required/>
         </div>
 
         <div class="buy__tickets-form-input">
@@ -561,14 +563,14 @@
           <p>Количество участников</p>
           <p>При регистрации 2-х и более участников действует скидка 10%</p>
           <div class="buy__tickets-form-input-2-count">
-            <button>-</button>
-            <input type="number" />
-            <button>+</button>
+            <button class="minusPerson">-</button>
+            <input type="number" class="persons" value="0" required/>
+            <button class="plusPerson">+</button>
           </div>
         </div>
         <div class="buy__tickets-form-input-3">
           <input id="checkbox" type="checkbox" />
-          <label for="checkbox"
+          <label for="checkbox required"
             >Нажимая на кнопку, я даю согласие на
             <span>обработку персональных данных</span> и соглащаюсь с
             <span>политикой конфиденциальности</span>.</label
@@ -576,7 +578,7 @@
         </div>
 
         <div class="buy__tickets-form-input-4">
-          <button>Купить</button>
+          <button type="submit" class="fors_sess-btn">Купить</button>
         </div>
       </section>
 
@@ -636,15 +638,26 @@
 
       <section class="buy__tickets-data">
         <div class="buy__tickets-data-title">
-          <h3>Получить варианты Партнерского участия</h3>
+          <h3 class="data-title">Получить варианты Партнерского участия</h3>
         </div>
 
         <div class="buy__tickets-data-inputs">
-          <input type="text" placeholder="Ваше имя" />
-          <input type="email" placeholder="Почта" />
-          <input type="tel" placeholder="🇷🇺 +7 (999) 999-99-99" />
-          <input type="text" placeholder="Компания" />
-          <button>Отправить</button>
+          <div>
+            <input type="text" placeholder="Ваше имя" class="data_name" required/>
+          <div class="data_name-error"></div>
+          </div>
+          <div>
+            <input type="email" placeholder="Почта" class="data_email" required/>
+          <div class="data_email-error"></div>
+          </div>
+          <div>
+            <input type="tel" placeholder="🇷🇺 +7 (999) 999-99-99" class="data_tel" required/>
+          <div class="data_tel-error"></div>
+          </div>
+          <div>
+            <input type="text" placeholder="Компания" />
+          </div>
+          <button type="submit" class="data_btn">Отправить</button>
         </div>
         <div class="buy__tickets-data-agree">
           <p>
@@ -855,11 +868,12 @@
       </section>
 
       <section class="buy__tickets-take-program">
-        <h4>Получить программу сессии на e-mail</h4>
+        <h4 class="programm-title">Получить программу сессии на e-mail</h4>
         <div class="buy__tickets-take-program-input">
-          <input type="email" placeholder="Введите Ваш e-mail" />
-          <button>Отправить запрос</button>
+          <input type="email" placeholder="Введите Ваш e-mail" class="programm-email" required/>
+          <button type="submit" class="programm-btn">Отправить запрос</button>
         </div>
+        <div class="programm-error"></div>
         <p>
           Нажимая на кнопку, вы даете согласие на обработку персональных данных
           <br />

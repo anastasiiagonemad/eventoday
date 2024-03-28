@@ -23,7 +23,6 @@
             <li><a href="company.html">О компании</a></li>
             <li><a href="archive.html">Архив</a></li>
             <li><a href="partner.html">Партнерам</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
         <div class="main__reg">
@@ -41,7 +40,6 @@
             <li><a class="menu-item" href="company.html">О компании</a></li>
             <li><a class="menu-item" href="archive.html">Архив</a></li>
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
-            <li><a class="menu-item" href="contacts.html">Контакты</a></li>
           </ul>
         </div>
       </section>
@@ -592,14 +590,31 @@
         </div>
         <div class="main__form-data">
           <form>
-            <div><input type="text" placeholder="Имя" /></div>
             <div>
-              <input type="tel" placeholder="Телефон" />
-              <input type="email" placeholder="Email" />
+              <div class="error-name"></div>
+              <input type="text" placeholder="Имя" id="main_name" required />
+            </div>
+            <div>
+              <div class="error-tel"></div>
+              <input
+                type="tel"
+                placeholder="Телефон"
+                pattern="[0-9]{11}"
+                id="main_tel"
+                required
+              />
+
+              <div class="error-email"></div>
+              <input
+                type="email"
+                placeholder="Email"
+                id="main_email"
+                required
+              />
             </div>
             <div><input type="text" placeholder="Компания" /></div>
             <div>
-              <button>Получить</button>
+              <button type="submit" id="main_data-btn">Получить</button>
               <p>
                 Нажимая «Получить», я соглашаюсь с условиями
                 <a href="#">обработки персональных данных.</a>

@@ -48,4 +48,117 @@ document.addEventListener('DOMContentLoaded', function () {
 
   countdownTimer();
   timerId = setInterval(countdownTimer, 1000);
+
+  //работа окна по прибавлению количества человек для покупки билета на форсайт-сессию
+  const plus = document.querySelector('.plusPerson');
+  const minus = document.querySelector('.minusPerson');
+  const persons = document.querySelector('.persons');
+
+  const incraseValue = () => {
+    const currentValue = parseInt(persons.value, 10);
+    persons.value = isNaN(currentValue) ? 0 : currentValue + 1;
+  };
+
+  const decreaseValue = () => {
+    const currentValue = parseInt(persons.value, 10);
+    persons.value = Math.max(0, currentValue - 1);
+  };
+
+  plus.addEventListener('click', incraseValue);
+  minus.addEventListener('click', decreaseValue);
+
+  //валидация формы форсайт-сессия
+  document.querySelector('.fors_sess-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    const formDiv = document.querySelector('.buy__tickets-form');
+    const fio = document.getElementById('fio');
+    const email = document.getElementById('email');
+    const tel = document.getElementById('tel');
+
+    const errorFio = document.querySelector('.fio_error');
+    const errorEmail = document.querySelector('.email_error');
+    const errorTel = document.querySelector('.tel_error');
+
+    const fioReg = /^(?=.{2,30}$)+[A-Za-zА-Яа-я]+$/;
+    const telReg = /^[0-9]{7,11}$/;
+    const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/;
+
+    const validateFio = (value) => fioReg.test(value);
+    const validateEmail = (value) => emailReg.test(value);
+    const validateTel = (value) => telReg.test(value);
+
+    if (
+      (!validateFio(fio.value) &&
+        !validateEmail(email.value) &&
+        !validateTel(tel.value)) ||
+      (fio.value === '' && email.value === '' && tel.value === '')
+    ) {
+      errorFio.textContent =
+        'Введите имя содержащее буквы русского или англиского алфавита';
+      errorEmail.textContent = 'Введите email в формате : example@ex.com';
+      errorTel.textContent = 'Введите номер телефона в формате 81234567890';
+    } else {
+      formDiv.innerHTML = 'Форма успешно отправлена!';
+      formDiv.style.fontSize = '2em';
+      formDiv.style.fontWeight = '600';
+      formDiv.style.padding = '50px';
+    }
+  });
+
+  //валидация для формы варианты партнерского участия
+  document.querySelector('.data_btn').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const email = document.querySelector('.data_email');
+    const name = document.querySelector('.data_name');
+    const tel = document.querySelector('.data_tel');
+
+    const errorName = document.querySelector('.data_name-error');
+    const errorEmail = document.querySelector('.data_email-error');
+    const errorTel = document.querySelector('.data_tel-error');
+
+    const nameReg = /^(?=.{2,30}$)+[A-Za-zА-Яа-я]+$/;
+    const telReg = /^[0-9]{7,11}$/;
+    const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/;
+
+    const validateName = (value) => nameReg.test(value);
+    const validateEmail = (value) => emailReg.test(value);
+    const validateTel = (value) => telReg.test(value);
+
+    if (
+      (!validateName(name.value) &&
+        !validateEmail(email.value) &&
+        !validateTel(tel.value)) ||
+      (!name.value && !email.value && !tel.value)
+    ) {
+      errorName.textContent =
+        'Введите имя содержащее буквы русского или англиского алфавита';
+      errorEmail.textContent = 'Введите email в формате : example@ex.com';
+      errorTel.textContent = 'Введите номер телефона в формате 81234567890';
+    } else {
+      document.querySelector('.data-title').innerText =
+        'Варианты партнерского участия будут отправлены Вам в течении часа.';
+      name.value = '';
+      email.value = '';
+      tel.value = '';
+    }
+  });
+
+  document.querySelector('.programm-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const email = document.querySelector('.programm-email');
+    const error = document.querySelector('.programm-error');
+    const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/;
+
+    const validateEmail = (value) => emailReg.test(value);
+
+    if (!validateEmail(email.value)) {
+      error.textContent = 'Введите email в формате : example@ex.com';
+    } else {
+      document.querySelector('.programm-title').innerText =
+        'Вы получите програму на почту в течении часа.';
+      email.value = '';
+    }
+  });
 });
