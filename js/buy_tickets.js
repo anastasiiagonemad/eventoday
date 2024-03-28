@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('.programm-title').innerText =
         'Вы получите програму на почту в течении часа.';
       email.value = '';
+      error.textContent = '';
     }
   });
 });
