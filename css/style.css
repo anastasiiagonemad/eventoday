@@ -3960,6 +3960,7 @@ footer {
     border-radius: 15px;
   }
   .partner__sponsor-container .container-text button {
+    font-size: 0.7em;
     cursor: pointer;
     border: 2px solid #cc1b00;
     background-color: lightgray;
