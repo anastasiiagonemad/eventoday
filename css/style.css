@@ -3739,6 +3739,9 @@ footer {
     display: block;
     gap: 10px;
   }
+  .partner__form-2-container-data .flex .partner-tel-error-2 {
+    display: none;
+  }
   .partner__form-2-container-data button {
     background-color: #cc1b00;
     padding: 10px 20px 10px 20px;
@@ -3900,6 +3903,7 @@ footer {
   font-size: 0.7em;
 }
 .partner__sponsor-container .container-text button {
+  font-size: 0.7em;
   cursor: pointer;
   border: 2px solid #cc1b00;
   background-color: white;
