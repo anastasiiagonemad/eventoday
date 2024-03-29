@@ -93,8 +93,11 @@
 
     button:first-child {
       background-color: $main-red;
-      color: white;
-      text-transform: uppercase;
+      a {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'IBX', Arial, Helvetica, sans-serif;
+      }
     }
   }
 }
@@ -189,14 +192,17 @@
         padding: 10px;
         border-radius: 25px;
         border: none;
-        font-family: 'IBX', sans-serif;
+        font-family: 'IBX', Arial, Helvetica, sans-serif;
         font-size: 0.7em;
       }
 
       button:first-child {
         background-color: $main-red;
-        color: white;
-        text-transform: uppercase;
+        a {
+          color: white;
+          text-transform: uppercase;
+          font-family: 'IBX', Arial, Helvetica, sans-serif;
+        }
       }
     }
   }

@@ -29,9 +29,12 @@
       padding: 10px;
       border: none;
       background-color: $main-red;
-      color: white;
-      font-size: 1.2em;
       border-radius: 25px;
+      a {
+        color: white;
+        font-weight: 400;
+        font-size: 1.2em;
+      }
     }
   }
 
@@ -97,9 +100,11 @@
         padding: 10px;
         border: none;
         background-color: $main-red;
-        color: white;
-        font-size: 0.875em;
         border-radius: 25px;
+        a {
+          color: white;
+          font-size: 0.875em;
+        }
       }
     }
   }
