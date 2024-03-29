@@ -25,8 +25,10 @@
           </ul>
         </div>
         <div class="main__reg">
-          <button>Регистрация</button>
-          <a href="#"><img src="assets/icons/Vector.png" alt="pic" /></a>
+          <button id="myBtn">Регистрация</button>
+          <a href="registration.html"
+            ><img src="assets/icons/Vector.png" alt="pic"
+          /></a>
         </div>
 
         <div class="menu">
@@ -40,6 +42,51 @@
             <li><a class="menu-item" href="archive.html">Архив</a></li>
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
           </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration__form">
+              <div class="registration__form-title">
+                <h2>Регистрация</h2>
+              </div>
+              <form>
+                <div class="registration__form-input">
+                  <div>
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Отчество" />
+                  </div>
+                  <div class="registration__form-input-date">
+                    <label for="reg-date">Дата рождения</label>
+                    <input
+                      class="reg-date"
+                      type="date"
+                      placeholder="Дата рождения"
+                    />
+                  </div>
+                  <div class="registration__form-input-tel">
+                    <label for="reg-tel">Номер телефона</label>
+                    <input
+                      id="reg-tel"
+                      type="tel"
+                      placeholder="+7 777 777 77 77"
+                    />
+                  </div>
+                  <div>
+                    <button>Подтвердить телефон</button>
+                  </div>
+                </div>
+                <div class="registration__form-btn">
+                  <button>Завершить</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </header>
@@ -349,18 +396,34 @@
 
       <section class="company-data">
         <div class="company-data-title">
-          <h3>
+          <h3 class="company-title">
             Или отправьте нам свои контактные данные, и мы с Вами свяжемся в
             ближайшее время!
           </h3>
         </div>
 
         <div class="company-data-inputs">
-          <input type="text" placeholder="Ваше имя" />
-          <input type="email" placeholder="Почта" />
-          <input type="tel" placeholder="🇷🇺 +7 (999) 999-99-99" />
-          <input type="text" placeholder="Компания" />
-          <button>Отправить</button>
+          <div>
+            <input class="company-name" type="text" placeholder="Ваше имя" />
+            <div class="company-name-error"></div>
+          </div>
+          <div>
+            <input class="company-email" type="email" placeholder="Почта" />
+            <div class="company-email-error"></div>
+          </div>
+          <div>
+            <input
+              class="company-tel"
+              type="tel"
+              placeholder="🇷🇺 +7 (999) 999-99-99"
+            />
+            <div class="company-tel-error"></div>
+          </div>
+          <div>
+            <input type="text" placeholder="Компания" />
+          </div>
+
+          <button type="submit" class="company-btn">Отправить</button>
         </div>
         <div class="company-data-agree">
           <p>
@@ -495,7 +558,6 @@
               <li><a href="company.html">О компании</a></li>
               <li><a href="archive.html">Архив</a></li>
               <li><a href="partner.html">Партнерам</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
             </ul>
           </div>
           <div>

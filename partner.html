@@ -23,8 +23,10 @@
             </ul>
           </div>
           <div class="main__reg">
-            <button>Регистрация</button>
-            <a href="#"><img src="assets/icons/Vector.png" alt="pic" /></a>
+            <button id="myBtn">Регистрация</button>
+            <a href="registration.html"
+              ><img src="assets/icons/Vector.png" alt="pic"
+            /></a>
           </div>
   
           <div class="menu">
@@ -38,6 +40,51 @@
               <li><a class="menu-item" href="archive.html">Архив</a></li>
               <li><a class="menu-item" href="partner.html">Партнерам</a></li>
             </ul>
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="registration__form">
+                <div class="registration__form-title">
+                  <h2>Регистрация</h2>
+                </div>
+                <form>
+                  <div class="registration__form-input">
+                    <div>
+                      <input type="text" placeholder="Фамилия" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Имя" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Отчество" />
+                    </div>
+                    <div class="registration__form-input-date">
+                      <label for="reg-date">Дата рождения</label>
+                      <input
+                        class="reg-date"
+                        type="date"
+                        placeholder="Дата рождения"
+                      />
+                    </div>
+                    <div class="registration__form-input-tel">
+                      <label for="reg-tel">Номер телефона</label>
+                      <input
+                        id="reg-tel"
+                        type="tel"
+                        placeholder="+7 777 777 77 77"
+                      />
+                    </div>
+                    <div>
+                      <button>Подтвердить телефон</button>
+                    </div>
+                  </div>
+                  <div class="registration__form-btn">
+                    <button>Завершить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </section>
       </header>
@@ -122,17 +169,38 @@
           <div class="partner__form-1-container-data">
             <form>
               <div>
-                <input type="text" placeholder="Имя" required />
+                <input
+                  class="partner-name-1"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                />
+                <div class="partner-name-error-1"></div>
               </div>
               <div class="flex">
-                <input type="tel" placeholder="Телефон" required />
-                <input type="email" placeholder="Email" required />
+                <input
+                  class="partner-tel-1"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+                <input
+                  class="partner-email-1"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="flex">
+                <div class="partner-tel-error-1"></div>
+                <div class="partner-email-error-1"></div>
               </div>
               <div>
                 <input type="text" placeholder="Компания" required />
+                <div class="partner-company-error-1"></div>
               </div>
               <div>
-                <button>Получить</button>
+                <button type="submit" class="partner-btn-1">Получить</button>
                 <p>
                   Нажимая «Получить», я соглашаюсь с условиями
                   <a href="#">обработки персональных данных.</a>
@@ -406,27 +474,56 @@
               площадки события
             </p>
           </div>
+          <div class="form-2-success"></div>
           <div class="partner__form-2-container-data">
-            <form>
+            <form class="form2">
               <div>
-                <input type="text" placeholder="Имя" required />
+                <input
+                  class="partner-name-2"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                />
+                <div class="partner-name-error-2"></div>
               </div>
               <div class="flex">
-                <input type="tel" placeholder="Телефон" required />
-                <input type="email" placeholder="Email" required />
+                <input
+                  class="partner-tel-2"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+                <input
+                  class="partner-email-2"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
               </div>
-              <div>
-                <input type="text" placeholder="Компания" required />
+              <div class="flex">
+                <div class="partner-tel-error-2"></div>
+                <div class="partner-email-error-2"></div>
               </div>
               <div>
                 <input
+                  class="partner-company-2"
+                  type="text"
+                  placeholder="Компания"
+                  required
+                />
+                <div class="partner-company-error-2"></div>
+              </div>
+              <div>
+                <input
+                  class="partner-event-2"
                   type="text"
                   placeholder="Название мероприятия"
                   required
                 />
+                <div class="partner-event-error-2"></div>
               </div>
               <div>
-                <button>Получить</button>
+                <button type="submit" class="partner-btn-2">Получить</button>
                 <p>
                   Нажимая «Получить», я соглашаюсь с условиями
                   <a href="#">обработки персональных данных.</a>
@@ -465,86 +562,85 @@
       </section>
     </main>
     <footer>
-      <div class="footer__container">
-        <div class="footer__container-1">
-          <div><img src="assets/logo/logo.png" alt="logo" /></div>
-          <div>
+        <div class="footer__container">
+          <div class="footer__container-1">
+            <div><img src="assets/logo/logo.png" alt="logo" /></div>
             <div>
-              Профессиональная <br />организация конференций<br />
-              любой сложности в Москве.
-            </div>
-            <div>Социальные сети</div>
-            <div>
-              <a href="#"
-                ><img src="assets/icons/youtube.png" alt="youtube"
-              /></a>
-              <a href="#"
-                ><img src="assets/icons/telegram.png" alt="telegram"
-              /></a>
-              <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
-            </div>
-            <div>Реквизиты компании</div>
-            <div>ИП Лючина Татьяна Изосимовна</div>
-            <div>ИНН: 550305019040</div>
-            <div>ОГРН/ОГРНИП: 323554300023500</div>
-          </div>
-        </div>
-        <div class="footer__container-2">
-          <div>
-            <ul>
-              <li><a href="conference.html">Календарь</a></li>
-              <li><a href="tickets.html">Билеты</a></li>
-              <li><a href="buytickets.html">Конференция</a></li>
-              <li><a href="company.html">О компании</a></li>
-              <li><a href="archive.html">Архив</a></li>
-              <li><a href="partner.html">Партнерам</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </div>
-          <div>
-            <div>
-              <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
-              <p>
-                Екатерина Головченко<br />
-                eg@eventtoday.biz <br />
-                Тема письма: Выступление спикера <br />[тема мероприятия или
-                доклада]
-              </p>
-            </div>
-            <div>
-              <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
-              <p>
-                +7 (951) 414-22-13 <br />
-                cc@eventtoday.biz <br />
-                Тема письма: Продвижение <br />компании [название вашей
-                <br />компании]
-              </p>
-            </div>
-            <div>
-              <h4>
-                ДЛЯ ИНФОРМАЦИОННЫХ<br />
-                СПОНСОРОВ И СМИ
-              </h4>
-              <p>
-                Светлана Барцева <br />
-                s.barceva@eventtoday.biz <br />
-                Тема письма: Информационная<br />
-                поддержка | Аккредитация СМИ <br />[название мероприятия]
-              </p>
+              <div>
+                Профессиональная <br />организация конференций<br />
+                любой сложности в Москве.
+              </div>
+              <div>Социальные сети</div>
+              <div>
+                <a href="#"
+                  ><img src="assets/icons/youtube.png" alt="youtube"
+                /></a>
+                <a href="#"
+                  ><img src="assets/icons/telegram.png" alt="telegram"
+                /></a>
+                <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+              </div>
+              <div>Реквизиты компании</div>
+              <div>ИП Лючина Татьяна Изосимовна</div>
+              <div>ИНН: 550305019040</div>
+              <div>ОГРН/ОГРНИП: 323554300023500</div>
             </div>
           </div>
+          <div class="footer__container-2">
+            <div>
+              <ul>
+                <li><a href="conference.html">Календарь</a></li>
+                <li><a href="tickets.html">Билеты</a></li>
+                <li><a href="buytickets.html">Конференция</a></li>
+                <li><a href="company.html">О компании</a></li>
+                <li><a href="archive.html">Архив</a></li>
+                <li><a href="partner.html">Партнерам</a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+                <p>
+                  Екатерина Головченко<br />
+                  eg@eventtoday.biz <br />
+                  Тема письма: Выступление спикера <br />[тема мероприятия или
+                  доклада]
+                </p>
+              </div>
+              <div>
+                <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+                <p>
+                  +7 (951) 414-22-13 <br />
+                  cc@eventtoday.biz <br />
+                  Тема письма: Продвижение <br />компании [название вашей
+                  <br />компании]
+                </p>
+              </div>
+              <div>
+                <h4>
+                  ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                  СПОНСОРОВ И СМИ
+                </h4>
+                <p>
+                  Светлана Барцева <br />
+                  s.barceva@eventtoday.biz <br />
+                  Тема письма: Информационная<br />
+                  поддержка | Аккредитация СМИ <br />[название мероприятия]
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="footer__container-end">
-        <div>© EventСегодня, 2024</div>
-        <div>
-          <a href="#">Оферта</a>
-          <a href="#">Политика конфиденциальности</a>
-          <a href="#">Партнерские пакеты</a>
+  
+        <div class="footer__container-end">
+          <div>© EventСегодня, 2024</div>
+          <div>
+            <a href="#">Оферта</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Партнерские пакеты</a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     <script src="js/partner.js"></script>
   </body>
 </html>

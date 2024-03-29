@@ -18,6 +18,15 @@
 
     &-data {
       width: 100%;
+      .partner-name-error-1,
+      .partner-email-error-1,
+      .partner-tel-error-1,
+      .partner-company-error-1 {
+        font-size: 0.7em;
+        color: $main-red;
+        padding-bottom: 10px;
+        margin-top: -20px;
+      }
       input {
         margin-bottom: 30px;
         padding: 5px;
@@ -76,6 +85,16 @@
 
     &-data {
       width: 100%;
+      .partner-name-error-2,
+      .partner-email-error-2,
+      .partner-tel-error-2,
+      .partner-company-error-2,
+      .partner-event-error-2 {
+        font-size: 0.7em;
+        color: $main-red;
+        padding-bottom: 10px;
+        margin-top: -20px;
+      }
       input {
         margin-bottom: 30px;
         padding: 5px;

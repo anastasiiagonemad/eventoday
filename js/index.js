@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const errorEmail = document.querySelector('.error-email');
 
     const nameReg = /^(?=.{2,30}$)+[A-Za-zА-Яа-я]+$/;
-    const telReg = /^[0-9]{7,11}$/;
+    const telReg = /^[8|+7]+[0-9]{7,12}$/;
     const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/;
 
     const validName = (value) => nameReg.test(value);
@@ -83,5 +83,23 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (!validEmail(main_email.value)) {
       errorEmail.textContent = 'Введите Email в формате : example@ex.com';
     }
+  });
+
+  //MODAL
+  const btn = document.getElementById('myBtn');
+  const modal = document.getElementById('myModal');
+
+  btn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  document.getElementsByClassName('close')[0].addEventListener('click', () => {
+    modal.style.display = 'none';
   });
 });
