@@ -4038,6 +4038,9 @@ footer {
     width: 100px;
   }
 }
+.registration {
+  margin-top: 50px;
+}
 .registration__form {
   text-align: center;
 }
