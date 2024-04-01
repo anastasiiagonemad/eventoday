@@ -4366,6 +4366,9 @@ footer {
     background-color: #cc1b00;
   }
 }
+.profile {
+  margin-top: 50px;
+}
 .profile__title {
   margin: 0 30px 50px 30px;
   display: flex;
