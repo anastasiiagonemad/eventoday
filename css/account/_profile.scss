@@ -217,6 +217,7 @@
       }
 
       &-event {
+        width: 70%;
         padding: 20px;
         border-radius: 15px;
         background-color: rgb(238, 236, 236);
@@ -225,23 +226,23 @@
           padding: 20px;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          align-items: flex-start;
+          justify-content: flex-start;
           img {
             width: 100%;
           }
 
           &-container {
-            width: 80%;
+            width: 100%;
             &-title {
               width: 100%;
               text-align: left;
-              font-size: 1.2em;
+              font-size: 1em;
             }
             &-desc {
               margin-top: -5px;
               display: flex;
-              flex-direction: column;
+              flex-wrap: wrap;
               div:first-child {
                 p {
                   margin-top: -5px;
@@ -253,7 +254,7 @@
                 align-self: flex-end;
                 gap: 10px;
                 button {
-                  margin-top: -20px;
+                  margin-top: 0;
                   font-size: 0.6em;
                   font-weight: 400;
                   color: $main-red;
@@ -270,6 +271,7 @@
       }
 
       &-FAQ {
+        width: 100%;
         display: none;
         padding: 100px;
         background-color: rgb(238, 236, 236);
