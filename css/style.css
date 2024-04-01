@@ -4438,7 +4438,7 @@ footer {
     gap: 20px;
   }
   .profile__options-choice {
-    width: 50%;
+    width: 70%;
     height: 25%;
     padding: 20px;
     background-color: rgb(238, 236, 236);
@@ -4450,6 +4450,9 @@ footer {
     gap: 10px;
   }
   .profile__options-choice div button {
+    text-align: left;
+    color: black;
+    background-color: rgb(238, 236, 236);
     padding: 15px;
     border: none;
     font-size: 1em;
@@ -4466,7 +4469,7 @@ footer {
     color: #cc1b00;
   }
   .profile__options-ticket {
-    width: 50%;
+    width: 70%;
     padding: 20px;
     display: flex;
     flex-direction: column;
