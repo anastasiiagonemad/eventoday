@@ -34,6 +34,10 @@
       }
     }
 
+    &-links-mob {
+      display: none;
+    }
+
     &-container {
       display: flex;
       align-items: end;
@@ -117,17 +121,23 @@
           color: $main-red;
           font-weight: 600;
         }
-        details {
-          display: flex;
-          summary {
-            list-style: none;
-          }
-          summary::-webkit-details-marker {
-            display: none;
-          }
-          a {
-            text-align: end;
-            color: black;
+        button {
+          border: none;
+          background-color: lightgray;
+        }
+
+        .custom-select {
+          color: #616263;
+          overflow: hidden;
+          position: relative;
+          display: block;
+
+          select {
+            padding: 5px;
+            display: block;
+            border: none;
+            background-color: $footer;
+            background-color: lightgray;
           }
         }
       }

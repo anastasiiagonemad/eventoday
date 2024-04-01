@@ -62,7 +62,8 @@
                     <input
                       class="reg-date"
                       type="text"
-                      placeholder="ДД.ММ.ГГГГ"
+                      onfocus="this.type = 'date'"
+                      onblur="this.type = 'text'"
                     />
                   </div>
                   <div class="registration__form-input-tel">
@@ -115,25 +116,27 @@
           </div>
           <div class="archive__2023-links-mob">
             <div>ЦИФРА МЕД</div>
-            <details>
-              <summary>
-                <img src="assets/icons/selector-archive.png" alt="" />
-              </summary>
-              <a href="#">цифра мед</a>
-              <a href="#">цифра жкх</a>
-              <a href="#">споры</a>
-              <a href="#">активы банка</a>
-              <a href="#">кибер без</a>
-              <a href="#">налоги</a>
-              <a href="#">семейное и наследственное право</a>
-              <a href="#">цифра транспорт</a>
-              <a href="#">экосистемы</a>
-              <a href="#">практика банкротства</a>
-              <a href="#">залоги</a>
-              <a href="#">кадры</a>
-              <a href="#">цифрововой девелопмент</a>
-              <a href="#">риски</a>
-            </details>
+            <div class="custom-select">
+              <button class="select-btn select-btn1">
+                <img src="assets/icons/selector-archive.png" alt="icon" />
+              </button>
+              <select class="select1" style="display: none">
+                <option>цифра мед</option>
+                <option>цифра жкх</option>
+                <option>споры</option>
+                <option>активы банка</option>
+                <option>кибер без</option>
+                <option>налоги</option>
+                <option>семейное и наследственное право</option>
+                <option>цифра транспорт</option>
+                <option>экосистемы</option>
+                <option>практика банкротства</option>
+                <option>залоги</option>
+                <option>кадры</option>
+                <option>цифрововой девелопмент</option>
+                <option>риски</option>
+              </select>
+            </div>
           </div>
           <div class="archive__2023-container">
             <div class="archive__2023-container-1">
@@ -174,22 +177,24 @@
           </div>
           <div class="archive__2023-links-mob">
             <div>АКТИВЫ</div>
-            <details>
-              <summary>
-                <img src="assets/icons/selector-archive.png" alt="" />
-              </summary>
-              <a href="#">активы</a>
-              <a href="#">цифровой девелопмент</a>
-              <a href="#">умный город</a>
-              <a href="#">бизнес-риски</a>
-              <a href="#">персональные данные</a>
-              <a href="#">цфа</a>
-              <a href="#">телемед</a>
-              <a href="#">цифра транспорт</a>
-              <a href="#">цифра мед</a>
-              <a href="#">практика банкротства</a>
-              <a href="#">бизнес-риски</a>
-            </details>
+            <div class="custom-select">
+              <button class="select-btn select-btn2">
+                <img src="assets/icons/selector-archive.png" alt="icon" />
+              </button>
+              <select class="select2" style="display: none">
+                <option>активы</option>
+                <option>цифровой девелопмент</option>
+                <option>умный город</option>
+                <option>бизнес-риски</option>
+                <option>персональные данные</option>
+                <option>цфа</option>
+                <option>телемед</option>
+                <option>цифра транспорт</option>
+                <option>цифра мед</option>
+                <option>практика банкротства</option>
+                <option>бизнес-риски</option>
+              </select>
+            </div>
           </div>
           <div class="archive__2022-container">
             <div class="archive__2022-container-1">
@@ -215,27 +220,29 @@
         <div class="archive__2021">
           <div class="archive__2021-links">
             <ul>
-              <li><a href="#">цифровизация транспорта</a></li>
-              <li><a href="#">бизнес-риски</a></li>
-              <li><a href="#">налоговый контроль</a></li>
-              <li><a href="#">возврат активов</a></li>
-              <li><a href="#">трудовое право</a></li>
-              <li><a href="#">практика банкротства</a></li>
+              <li>цифровизация транспорта</li>
+              <li>бизнес-риски</li>
+              <li>налоговый контроль</li>
+              <li>возврат активов</li>
+              <li>трудовое право</li>
+              <li>практика банкротства</li>
             </ul>
           </div>
           <div class="archive__2023-links-mob">
             <div>ЦИФРОВИЗАЦИЯ ТРАНСПОРТА</div>
-            <details>
-              <summary>
-                <img src="assets/icons/selector-archive.png" alt="" />
-              </summary>
-              <a href="#">цифровизация транспорта</a>
-              <a href="#">бизнес-риски</a>
-              <a href="#">налоговый контроль</a>
-              <a href="#">возврат активов</a>
-              <a href="#">трудовое право</a>
-              <a href="#">практика банкротства</a>
-            </details>
+            <div class="custom-select">
+              <button class="select-btn select-btn3">
+                <img src="assets/icons/selector-archive.png" alt="icon" />
+              </button>
+              <select class="select3" style="display: none">
+                <option><a href="#">цифровизация транспорта</a></option>
+                <option><a href="#">бизнес-риски</a></option>
+                <option><a href="#">налоговый контроль</a></option>
+                <option><a href="#">возврат активов</a></option>
+                <option><a href="#">трудовое право</a></option>
+                <option><a href="#">практика банкротства</a></option>
+              </select>
+            </div>
           </div>
           <div class="archive__2021-container">
             <div class="archive__2021-container-1">
@@ -270,13 +277,15 @@
           </div>
           <div class="archive__2023-links-mob">
             <div>СУБСИДИРОВАННАЯ ОТВЕТСТВЕННОСТЬ</div>
-            <details>
-              <summary>
-                <img src="assets/icons/selector-archive.png" alt="" />
-              </summary>
-              <a href="#">субсидиарная ответственность</a>
-              <a href="#">практика банкротства</a>
-            </details>
+            <div class="custom-select">
+              <button class="select-btn select-btn4">
+                <img src="assets/icons/selector-archive.png" alt="icon" />
+              </button>
+              <select class="select4" style="display: none">
+                <option>субсидиарная ответственность</option>
+                <option>практика банкротства</option>
+              </select>
+            </div>
           </div>
           <div class="archive__2020-container">
             <div class="archive__2020-container-1">

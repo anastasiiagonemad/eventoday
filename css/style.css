@@ -55,13 +55,16 @@ p {
 
 .main {
   position: fixed;
-  width: 90%;
+  width: 95%;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(255, 255, 255);
   top: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 1230px;
+  min-width: 320px;
+  z-index: 100;
   height: 60px;
 }
 .main__logo {
@@ -109,6 +112,9 @@ p {
   }
 }
 @media screen and (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
   .main__links {
     display: none;
   }
@@ -186,7 +192,7 @@ p {
     list-style-type: none;
     transform: translateX(-100%);
     transition: 0.3s;
-    width: 100vw;
+    width: 100%;
     border-radius: 5px;
   }
   .menu-item {
@@ -1159,6 +1165,7 @@ footer {
   }
 }
 .buy__tickets-image {
+  margin-top: 100px;
   padding: 0;
 }
 .buy__tickets-image img {
@@ -2230,7 +2237,7 @@ footer {
   font-size: 0.7em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 782px) {
   .buy__tickets-data-title {
     text-align: center;
     margin-bottom: 30px;
@@ -3178,6 +3185,9 @@ footer {
 .archive__2023-links ul li a:hover, .archive__2022-links ul li a:hover, .archive__2021-links ul li a:hover, .archive__2020-links ul li a:hover {
   color: #cc1b00;
 }
+.archive__2023-links-mob, .archive__2022-links-mob, .archive__2021-links-mob, .archive__2020-links-mob {
+  display: none;
+}
 .archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
   display: flex;
   align-items: end;
@@ -3247,18 +3257,22 @@ footer {
     color: #cc1b00;
     font-weight: 600;
   }
-  .archive__2023-links-mob details, .archive__2022-links-mob details, .archive__2021-links-mob details, .archive__2020-links-mob details {
-    display: flex;
+  .archive__2023-links-mob button, .archive__2022-links-mob button, .archive__2021-links-mob button, .archive__2020-links-mob button {
+    border: none;
+    background-color: lightgray;
   }
-  .archive__2023-links-mob details summary, .archive__2022-links-mob details summary, .archive__2021-links-mob details summary, .archive__2020-links-mob details summary {
-    list-style: none;
+  .archive__2023-links-mob .custom-select, .archive__2022-links-mob .custom-select, .archive__2021-links-mob .custom-select, .archive__2020-links-mob .custom-select {
+    color: #616263;
+    overflow: hidden;
+    position: relative;
+    display: block;
   }
-  .archive__2023-links-mob details summary::-webkit-details-marker, .archive__2022-links-mob details summary::-webkit-details-marker, .archive__2021-links-mob details summary::-webkit-details-marker, .archive__2020-links-mob details summary::-webkit-details-marker {
-    display: none;
-  }
-  .archive__2023-links-mob details a, .archive__2022-links-mob details a, .archive__2021-links-mob details a, .archive__2020-links-mob details a {
-    text-align: end;
-    color: black;
+  .archive__2023-links-mob .custom-select select, .archive__2022-links-mob .custom-select select, .archive__2021-links-mob .custom-select select, .archive__2020-links-mob .custom-select select {
+    padding: 5px;
+    display: block;
+    border: none;
+    background-color: #808080;
+    background-color: lightgray;
   }
   .archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
     display: block;
@@ -3778,6 +3792,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 80%;
+    margin-right: 20px;
   }
   .partner__form-2-container-data .partner-name-error-2,
   .partner__form-2-container-data .partner-email-error-2,
@@ -3814,6 +3829,7 @@ footer {
     color: white;
     border: none;
     border-radius: 25px;
+    margin-left: 25px;
   }
   .partner__form-2-container-data p {
     font-size: 0.7em;
@@ -4234,7 +4250,7 @@ footer {
 }
 .modal .registration__form-input-date label {
   align-self: flex-start;
-  margin-left: 0;
+  margin-left: 25%;
   font-size: 0.5em;
   color: #808080;
 }
