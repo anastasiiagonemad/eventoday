@@ -11,17 +11,26 @@
   }
 
   &__links {
+    width: 100%;
+    display: flex;
+
     ul {
       display: flex;
       text-wrap: nowrap;
-      justify-content: center;
+      justify-content: space-evenly;
       gap: 6%;
-      width: 90%;
+      width: 100%;
 
       li {
         a {
           font-size: 0.875em;
           color: $main-red;
+        }
+        a:hover {
+          color: black;
+        }
+        .selected {
+          color: black;
         }
       }
     }
@@ -29,6 +38,7 @@
 
   &__reg {
     display: flex;
+    align-self: center;
     gap: 10px;
     button {
       background-color: $main-red;
@@ -37,6 +47,7 @@
       border: none;
       border-radius: 15px;
       font-size: 0.625em;
+      cursor: pointer;
     }
   }
 }
@@ -57,6 +68,7 @@
     margin-left: 50%;
   }
   .menu {
+    z-index: 1000;
     display: block;
   }
 

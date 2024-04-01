@@ -1,7 +1,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -79,6 +79,10 @@
           font-size: 0.5em;
           color: $footer;
         }
+
+        input::placeholder {
+          text-align: end;
+        }
       }
       &-tel {
         display: flex;
@@ -112,7 +116,7 @@
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;

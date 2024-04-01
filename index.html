@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="owl/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Event Today</title>
   </head>
@@ -17,9 +16,8 @@
         </div>
         <div class="main__links">
           <ul class="">
-            <li><a href="conference.html">Календарь</a></li>
+            <li><a class="selected" href="index.html">Календарь</a></li>
             <li><a href="tickets.html">Билеты</a></li>
-            <li><a href="buytickets.html">Конференция</a></li>
             <li><a href="company.html">О компании</a></li>
             <li><a href="archive.html">Архив</a></li>
             <li><a href="partner.html">Партнерам</a></li>
@@ -36,9 +34,8 @@
           <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
           <label for="burger-checkbox" class="burger"></label>
           <ul class="menu-list">
-            <li><a class="menu-item" href="conference.html">Календарь</a></li>
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
             <li><a class="menu-item" href="tickets.html">Билеты</a></li>
-            <li><a class="menu-item" href="buytickets.html">Конференция</a></li>
             <li><a class="menu-item" href="company.html">О компании</a></li>
             <li><a class="menu-item" href="archive.html">Архив</a></li>
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
@@ -66,8 +63,10 @@
                     <label for="reg-date">Дата рождения</label>
                     <input
                       class="reg-date"
-                      type="date"
-                      placeholder="Дата рождения"
+                      type="text"
+                      placeholder="📅"
+                      onfocus="this.type = 'date'"
+                      onblur="this.type = 'text'"
                     />
                   </div>
                   <div class="registration__form-input-tel">
@@ -93,53 +92,43 @@
     </header>
     <main>
       <section class="main__carousel">
-        <div
-          id="myCarousel"
-          class="carousel slide carousel-fade carousel-wrapper"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <div class="carousel__overlay-image item1">
-                <h2>Профессиональная <br />организация мероприятий</h2>
-                <button>Купить билеты</button>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="carousel__overlay-image item2">
-                <h2>Профессиональная <br />организация мероприятий</h2>
-                <button>Купить билеты</button>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="carousel__overlay-image item3">
-                <h2>
-                  Профессиональная <br />
-                  организация мероприятий
-                </h2>
-                <button>Купить билеты</button>
-              </div>
-            </div>
+        <div class="main-slider">
+          <div class="slide slide-1">
+            <h2>
+              Профессиональная <br />
+              организация мероприятий
+            </h2>
+            <button><a href="buytickets.html">Купить билеты</a></button>
+          </div>
+          <div class="slide slide-2">
+            <h2>
+              Профессиональная <br />
+              организация мероприятий
+            </h2>
+            <button><a href="buytickets.html">Купить билеты</a></button>
+          </div>
+          <div class="slide slide-3">
+            <h2>
+              Профессиональная <br />
+              организация мероприятий
+            </h2>
+            <button><a href="buytickets.html">Купить билеты</a></button>
           </div>
         </div>
       </section>
-      <div class="btn-test">
-        <a href="tickets.html">Купить билеты</a>
-      </div>
+
       <section class="main__calendar">
         <div class="main__calendar-title">
           <h4>Календарь мероприятий</h4>
         </div>
         <div class="main__calendar-btn">
-          <button class="APR22">22 апреля</button>
-          <button class="APR25">25 апреля</button>
-          <button class="MAY22">22 мая</button>
-          <button class="MAY30">30 мая</button>
-          <button class="SEP16">16 сентября</button>
-          <button class="SEP20">20 сентября</button>
-          <button class="OCT24">24 октября</button>
+          <button class="APR22 date">22 апреля</button>
+          <button class="APR25 date">25 апреля</button>
+          <button class="MAY22 date">22 мая</button>
+          <button class="MAY30 date">30 мая</button>
+          <button class="SEP16 date">16 сентября</button>
+          <button class="SEP20 date">20 сентября</button>
+          <button class="OCT24 date">24 октября</button>
         </div>
         <div class="owl-carousel owl-theme" id="carouselThree">
           <div><button class="APR22-mob">22 апреля</button></div>
@@ -172,7 +161,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>22 апреля 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -199,7 +188,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>25 апреля 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -225,7 +214,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>22 мая 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -255,7 +244,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>30 мая 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -281,7 +270,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>16 сентября 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -308,7 +297,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>20 сентября 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -333,7 +322,7 @@
               </div>
               <div class="main__calendar-container-desc-2-text2">
                 <p>24 октября 2024 года</p>
-                <p>Подробнее</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -645,16 +634,19 @@
               <input type="text" placeholder="Имя" id="main_name" required />
             </div>
             <div>
-              <div class="error-tel"></div>
+              <div class="error-tel-mob"></div>
               <input type="tel" placeholder="Телефон" id="main_tel" required />
-
-              <div class="error-email"></div>
+              <div class="error-email-mob"></div>
               <input
                 type="email"
                 placeholder="Email"
                 id="main_email"
                 required
               />
+            </div>
+            <div class="flex">
+              <div class="error-tel"></div>
+              <div class="error-email"></div>
             </div>
             <div><input type="text" placeholder="Компания" /></div>
             <div>
@@ -696,9 +688,8 @@
         <div class="footer__container-2">
           <div>
             <ul>
-              <li><a href="conference.html">Календарь</a></li>
+              <li><a href="index.html">Календарь</a></li>
               <li><a href="tickets.html">Билеты</a></li>
-              <li><a href="buytickets.html">Конференция</a></li>
               <li><a href="company.html">О компании</a></li>
               <li><a href="archive.html">Архив</a></li>
               <li><a href="partner.html">Партнерам</a></li>
@@ -756,9 +747,6 @@
         $('.owl-carousel').owlCarousel();
       });
     </script>
-
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -15,9 +15,8 @@
         </div>
         <div class="main__links">
           <ul class="">
-            <li><a href="conference.html">Календарь</a></li>
+            <li><a href="index.html">Календарь</a></li>
             <li><a href="tickets.html">Билеты</a></li>
-            <li><a href="buytickets.html">Конференция</a></li>
             <li><a href="company.html">О компании</a></li>
             <li><a href="archive.html">Архив</a></li>
             <li><a href="partner.html">Партнерам</a></li>
@@ -34,9 +33,8 @@
           <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
           <label for="burger-checkbox" class="burger"></label>
           <ul class="menu-list">
-            <li><a class="menu-item" href="conference.html">Календарь</a></li>
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
             <li><a class="menu-item" href="tickets.html">Билеты</a></li>
-            <li><a class="menu-item" href="buytickets.html">Конференция</a></li>
             <li><a class="menu-item" href="company.html">О компании</a></li>
             <li><a class="menu-item" href="archive.html">Архив</a></li>
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
@@ -111,8 +109,10 @@
                 <label for="reg-date">Дата рождения</label>
                 <input
                   class="reg-date"
-                  type="date"
-                  placeholder="Дата рождения"
+                  type="text"
+                  placeholder="📅"
+                  onfocus="this.type = 'date'"
+                  onblur="this.type = 'text'"
                 />
               </div>
               <div class="registration__form-input-tel">
@@ -127,6 +127,40 @@
               <button>Завершить</button>
             </div>
           </form>
+          <div class="registration__form-signin">
+            <p>
+              Уже зарегистрированы?
+              <button class="registration__form-signin-btn">Войти</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="signin">
+        <div class="signin__form">
+          <div class="signin__form-title">
+            <h2>Войти в личный кабинет</h2>
+          </div>
+          <form class="sign-in">
+            <div class="signin__form-input">
+              <div class="signin__form-input-login">
+                <input class="sign-name" type="text" placeholder="Логин" />
+              </div>
+              <div class="signin__form-input-password">
+                <input
+                  class="sign-password"
+                  type="password"
+                  placeholder="Пароль"
+                />
+              </div>
+            </div>
+            <div class="signin__form-btn">
+              <button class="signin-btn">Войти</button>
+            </div>
+          </form>
+          <div class="signin__form-reg">
+            <button class="signin__form-reg-btn">Зарегистрироваться</button>
+          </div>
         </div>
       </section>
     </main>
@@ -159,9 +193,8 @@
         <div class="footer__container-2">
           <div>
             <ul>
-              <li><a href="conference.html">Календарь</a></li>
+              <li><a href="index.html">Календарь</a></li>
               <li><a href="tickets.html">Билеты</a></li>
-              <li><a href="buytickets.html">Конференция</a></li>
               <li><a href="company.html">О компании</a></li>
               <li><a href="archive.html">Архив</a></li>
               <li><a href="partner.html">Партнерам</a></li>

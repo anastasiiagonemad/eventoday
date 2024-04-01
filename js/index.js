@@ -1,4 +1,16 @@
-// //calendar index.html
+//main-slider index.html
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide() {
+  slides[currentSlide].style.opacity = '0';
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].style.opacity = '1';
+  setTimeout(showSlide, 3000);
+}
+showSlide();
+
+//calendar index.html
 document.addEventListener('DOMContentLoaded', function () {
   const dates = [
     '.APR22',
@@ -57,6 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const errorName = document.querySelector('.error-name');
     const errorTel = document.querySelector('.error-tel');
     const errorEmail = document.querySelector('.error-email');
+    const errorTelMob = document.querySelector('.error-tel-mob');
+    const errorEmailMob = document.querySelector('.error-email-mob');
 
     const nameReg = /^(?=.{2,30}$)+[A-Za-zА-Яа-я]+$/;
     const telReg = /^[8|+7]+[0-9]{7,12}$/;
@@ -80,8 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
         'Введите Ваше имя используя толкько буквы русского или латинского алфавита';
     } else if (!validTel(main_tel.value)) {
       errorTel.textContent = 'Ввведите номер телефона в формате 81234567890';
+      errorTelMob.textContent = 'Ввведите номер телефона в формате 81234567890';
     } else if (!validEmail(main_email.value)) {
       errorEmail.textContent = 'Введите Email в формате : example@ex.com';
+      errorEmailMob.textContent = 'Введите Email в формате : example@ex.com';
     }
   });
 

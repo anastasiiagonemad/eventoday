@@ -15,10 +15,9 @@
             <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
           </div>
           <div class="main__links">
-            <ul class="">
-              <li><a href="conference.html">Календарь</a></li>
+            <ul>
+              <li><a href="index.html">Календарь</a></li>
               <li><a href="tickets.html">Билеты</a></li>
-              <li><a href="buytickets.html">Конференция</a></li>
               <li><a href="company.html">О компании</a></li>
               <li><a href="archive.html">Архив</a></li>
               <li><a href="partner.html">Партнерам</a></li>
@@ -35,9 +34,8 @@
             <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
             <label for="burger-checkbox" class="burger"></label>
             <ul class="menu-list">
-              <li><a class="menu-item" href="conference.html">Календарь</a></li>
+              <li><a class="menu-item" href="index.html">Календарь</a></li>
               <li><a class="menu-item" href="tickets.html">Билеты</a></li>
-              <li><a class="menu-item" href="buytickets.html">Конференция</a></li>
               <li><a class="menu-item" href="company.html">О компании</a></li>
               <li><a class="menu-item" href="archive.html">Архив</a></li>
               <li><a class="menu-item" href="partner.html">Партнерам</a></li>
@@ -65,8 +63,9 @@
                       <label for="reg-date">Дата рождения</label>
                       <input
                         class="reg-date"
-                        type="date"
-                        placeholder="Дата рождения"
+                        type="text"
+                        onfocus="this.type = 'date'"
+                        onblur="this.type = 'text'"
                       />
                     </div>
                     <div class="registration__form-input-tel">
@@ -659,14 +658,6 @@
               <td><img src="assets/icons/yes.png" alt="icon" /></td>
               <td><img src="assets/icons/no.png" alt="icon" /></td>
             </tr>
-
-            <tr class="table-3">
-              <td>&nbsp;</td>
-              <td><button><a href="buytickets.html#fors-sess">Регистрация</a></button></td>
-              <td><button><a href="buytickets.html#fors-sess">Регистрация</a></button></td>
-              <td><button><a href="buytickets.html#fors-sess">Регистрация</a></button></td>
-              <td><button><a href="buytickets.html#fors-sess">Регистрация</a></button></td>
-            </tr>
           </table>
         </div>
       </section>
@@ -770,9 +761,8 @@
           <div class="footer__container-2">
             <div>
               <ul>
-                <li><a href="conference.html">Календарь</a></li>
+                <li><a href="index.html">Календарь</a></li>
                 <li><a href="tickets.html">Билеты</a></li>
-                <li><a href="buytickets.html">Конференция</a></li>
                 <li><a href="company.html">О компании</a></li>
                 <li><a href="archive.html">Архив</a></li>
                 <li><a href="partner.html">Партнерам</a></li>
@@ -821,7 +811,7 @@
             <a href="#">Партнерские пакеты</a>
           </div>
         </div>
-      </footer>
+    </footer>
     <script src="owl/jquery-3.7.1.js"></script>
     <script src="owl/owl.js"></script>
     <script src="owl/owl.carousel.min.js"></script>

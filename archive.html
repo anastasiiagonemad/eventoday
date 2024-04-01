@@ -14,11 +14,10 @@
         </div>
         <div class="main__links">
           <ul class="">
-            <li><a href="conference.html">Календарь</a></li>
+            <li><a href="index.html">Календарь</a></li>
             <li><a href="tickets.html">Билеты</a></li>
-            <li><a href="buytickets.html">Конференция</a></li>
             <li><a href="company.html">О компании</a></li>
-            <li><a href="archive.html">Архив</a></li>
+            <li><a class="selected" href="archive.html">Архив</a></li>
             <li><a href="partner.html">Партнерам</a></li>
           </ul>
         </div>
@@ -33,9 +32,8 @@
           <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
           <label for="burger-checkbox" class="burger"></label>
           <ul class="menu-list">
-            <li><a class="menu-item" href="conference.html">Календарь</a></li>
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
             <li><a class="menu-item" href="tickets.html">Билеты</a></li>
-            <li><a class="menu-item" href="buytickets.html">Конференция</a></li>
             <li><a class="menu-item" href="company.html">О компании</a></li>
             <li><a class="menu-item" href="archive.html">Архив</a></li>
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
@@ -63,8 +61,9 @@
                     <label for="reg-date">Дата рождения</label>
                     <input
                       class="reg-date"
-                      type="date"
-                      placeholder="Дата рождения"
+                      type="text"
+                      onfocus="this.type = 'date'"
+                      onblur="this.type = 'text'"
                     />
                   </div>
                   <div class="registration__form-input-tel">
@@ -100,20 +99,20 @@
           </div>
           <div class="archive__2023-links">
             <ul>
-              <li><a href="">цифра мед</a></li>
-              <li><a href="">цифра жкх</a></li>
-              <li><a href="">споры</a></li>
-              <li><a href="">активы банка</a></li>
-              <li><a href="">кибер без</a></li>
-              <li><a href="">налоги</a></li>
-              <li><a href="">семейное и наследственное право</a></li>
-              <li><a href="">цифра транспорт</a></li>
-              <li><a href="">экосистемы</a></li>
-              <li><a href="">практика банкротства</a></li>
-              <li><a href="">залоги</a></li>
-              <li><a href="">кадры</a></li>
-              <li><a href="">цифрововой девелопмент</a></li>
-              <li><a href="">риски</a></li>
+              <li><a href="#">цифра мед</a></li>
+              <li><a href="#">цифра жкх</a></li>
+              <li><a href="#">споры</a></li>
+              <li><a href="#">активы банка</a></li>
+              <li><a href="#">кибер без</a></li>
+              <li><a href="#">налоги</a></li>
+              <li><a href="#">семейное и наследственное право</a></li>
+              <li><a href="#">цифра транспорт</a></li>
+              <li><a href="#">экосистемы</a></li>
+              <li><a href="#">практика банкротства</a></li>
+              <li><a href="#">залоги</a></li>
+              <li><a href="#">кадры</a></li>
+              <li><a href="#">цифрововой девелопмент</a></li>
+              <li><a href="#">риски</a></li>
             </ul>
           </div>
           <div class="archive__2023-container">
@@ -130,7 +129,7 @@
               </div>
             </div>
             <div class="archive__2023-container-2">
-              <button><a href="#">Подробнее</a></button>
+              <button><a href="conference.html">Подробнее</a></button>
             </div>
           </div>
         </div>
@@ -141,17 +140,17 @@
           </div>
           <div class="archive__2022-links">
             <ul>
-              <li><a href="">активы</a></li>
-              <li><a href="">цифровой девелопмент</a></li>
-              <li><a href="">умный город</a></li>
-              <li><a href="">бизнес-риски</a></li>
-              <li><a href="">персональные данные</a></li>
-              <li><a href="">цфа</a></li>
-              <li><a href="">телемед</a></li>
-              <li><a href="">цифра транспорт</a></li>
-              <li><a href="">цифра мед</a></li>
-              <li><a href="">практика банкротства</a></li>
-              <li><a href="">бизнес-риски</a></li>
+              <li><a href="#">активы</a></li>
+              <li><a href="#">цифровой девелопмент</a></li>
+              <li><a href="#">умный город</a></li>
+              <li><a href="#">бизнес-риски</a></li>
+              <li><a href="#">персональные данные</a></li>
+              <li><a href="#">цфа</a></li>
+              <li><a href="#">телемед</a></li>
+              <li><a href="#">цифра транспорт</a></li>
+              <li><a href="#">цифра мед</a></li>
+              <li><a href="#">практика банкротства</a></li>
+              <li><a href="#">бизнес-риски</a></li>
             </ul>
           </div>
           <div class="archive__2022-container">
@@ -168,7 +167,7 @@
               </div>
             </div>
             <div class="archive__2022-container-2">
-              <button><a href="#">Подробнее</a></button>
+              <button><a href="conference.html">Подробнее</a></button>
             </div>
           </div>
         </div>
@@ -179,12 +178,12 @@
           </div>
           <div class="archive__2021-links">
             <ul>
-              <li><a href="">цифровизация транспорта</a></li>
-              <li><a href="">бизнес-риски</a></li>
-              <li><a href="">налоговый контроль</a></li>
-              <li><a href="">возврат активов</a></li>
-              <li><a href="">трудовое право</a></li>
-              <li><a href="">практика банкротства</a></li>
+              <li><a href="#">цифровизация транспорта</a></li>
+              <li><a href="#">бизнес-риски</a></li>
+              <li><a href="#">налоговый контроль</a></li>
+              <li><a href="#">возврат активов</a></li>
+              <li><a href="#">трудовое право</a></li>
+              <li><a href="#">практика банкротства</a></li>
             </ul>
           </div>
           <div class="archive__2021-container">
@@ -204,7 +203,7 @@
               </div>
             </div>
             <div class="archive__2021-container-2">
-              <button><a href="#">Подробнее</a></button>
+              <button><a href="conference.html">Подробнее</a></button>
             </div>
           </div>
         </div>
@@ -215,8 +214,8 @@
           </div>
           <div class="archive__2020-links">
             <ul>
-              <li><a href="">субсидиарная ответственность</a></li>
-              <li><a href="">практика банкротства</a></li>
+              <li><a href="#">субсидиарная ответственность</a></li>
+              <li><a href="#">практика банкротства</a></li>
             </ul>
           </div>
           <div class="archive__2020-container">
@@ -236,7 +235,7 @@
               </div>
             </div>
             <div class="archive__2020-container-2">
-              <button><a href="#">Подробнее</a></button>
+              <button><a href="conference.html">Подробнее</a></button>
             </div>
           </div>
         </div>
@@ -270,9 +269,8 @@
         <div class="footer__container-2">
           <div>
             <ul>
-              <li><a href="conference.html">Календарь</a></li>
+              <li><a href="index.html">Календарь</a></li>
               <li><a href="tickets.html">Билеты</a></li>
-              <li><a href="buytickets.html">Конференция</a></li>
               <li><a href="company.html">О компании</a></li>
               <li><a href="archive.html">Архив</a></li>
               <li><a href="partner.html">Партнерам</a></li>
