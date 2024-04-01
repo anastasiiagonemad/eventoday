@@ -12,6 +12,10 @@ body {
   font-weight: 400;
 }
 
+main {
+  padding-top: 50px;
+}
+
 section {
   padding: 30px;
 }
@@ -51,7 +55,7 @@ p {
 
 .main {
   position: fixed;
-  width: 95%;
+  width: 90%;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -273,7 +277,6 @@ p {
 @media screen and (max-width: 600px) {
   .main__carousel {
     padding: 0;
-    margin-top: 0px;
   }
   .main__carousel .main-slider .slide {
     border-radius: 0px;
