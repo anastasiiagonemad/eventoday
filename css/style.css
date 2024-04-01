@@ -121,6 +121,7 @@ p {
     margin-left: 50%;
   }
   .menu {
+    margin-right: 10px;
     z-index: 1000;
     display: block;
   }
