@@ -4399,6 +4399,7 @@ footer {
   gap: 10px;
 }
 .profile__options-event-item-container-desc div:last-child button {
+  background-color: rgb(238, 236, 236);
   margin-top: -20px;
   font-size: 0.6em;
   font-weight: 400;
