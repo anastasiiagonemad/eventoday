@@ -3222,6 +3222,29 @@ footer {
   .archive__2023-links, .archive__2022-links, .archive__2021-links, .archive__2020-links {
     display: none;
   }
+  .archive__2023-links-mob, .archive__2022-links-mob, .archive__2021-links-mob, .archive__2020-links-mob {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .archive__2023-links-mob div, .archive__2022-links-mob div, .archive__2021-links-mob div, .archive__2020-links-mob div {
+    color: #cc1b00;
+    font-weight: 600;
+  }
+  .archive__2023-links-mob details, .archive__2022-links-mob details, .archive__2021-links-mob details, .archive__2020-links-mob details {
+    display: flex;
+  }
+  .archive__2023-links-mob details summary, .archive__2022-links-mob details summary, .archive__2021-links-mob details summary, .archive__2020-links-mob details summary {
+    list-style: none;
+  }
+  .archive__2023-links-mob details summary::-webkit-details-marker, .archive__2022-links-mob details summary::-webkit-details-marker, .archive__2021-links-mob details summary::-webkit-details-marker, .archive__2020-links-mob details summary::-webkit-details-marker {
+    display: none;
+  }
+  .archive__2023-links-mob details a, .archive__2022-links-mob details a, .archive__2021-links-mob details a, .archive__2020-links-mob details a {
+    text-align: end;
+    color: black;
+  }
   .archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
     display: block;
   }
@@ -3702,48 +3725,67 @@ footer {
     display: none;
   }
   .partner__form-2 {
-    margin-top: -100px;
-    margin-right: 20px;
+    width: 100%;
+    padding: 0;
   }
   .partner__form-2-container {
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .partner__form-2-container-text {
-    text-align: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .partner__form-2-container-text p:first-child {
-    width: 100%;
+    width: 80%;
     font-size: 1.5em;
   }
   .partner__form-2-container-text p:last-child {
     line-height: 1.7;
     font-size: 0.875em;
-    width: 100%;
+    width: 50%;
   }
   .partner__form-2-container-data {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  .partner__form-2-container-data .partner-name-error-2,
+  .partner__form-2-container-data .partner-email-error-2,
+  .partner__form-2-container-data .partner-tel-error-2,
+  .partner__form-2-container-data .partner-company-error-2,
+  .partner__form-2-container-data .partner-event-error-2 {
+    font-size: 0.7em;
+    color: #cc1b00;
+    padding-bottom: 10px;
+    margin-top: -10px;
     width: 100%;
   }
   .partner__form-2-container-data input {
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     width: 100%;
     border: 2px solid #cc1b00;
+    border-radius: 10px;
   }
   .partner__form-2-container-data input::-moz-placeholder {
-    color: #808080;
+    color: black;
   }
   .partner__form-2-container-data input::placeholder {
-    color: #808080;
+    color: black;
   }
   .partner__form-2-container-data .flex {
     display: block;
     gap: 10px;
-  }
-  .partner__form-2-container-data .flex .partner-tel-error-2 {
-    display: none;
+    width: 100%;
   }
   .partner__form-2-container-data button {
     background-color: #cc1b00;

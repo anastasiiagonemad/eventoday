@@ -142,45 +142,64 @@
   }
 
   .partner__form-2 {
-    margin-top: -100px;
-    margin-right: 20px;
+    width: 100%;
+    padding: 0;
     &-container {
-      display: block;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
       &-text {
-        text-align: center;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         p:first-child {
-          width: 100%;
+          width: 80%;
           font-size: 1.5em;
         }
         p:last-child {
           line-height: 1.7;
           font-size: 0.875em;
-          width: 100%;
+          width: 50%;
         }
       }
 
       &-data {
-        text-align: center;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        .partner-name-error-2,
+        .partner-email-error-2,
+        .partner-tel-error-2,
+        .partner-company-error-2,
+        .partner-event-error-2 {
+          font-size: 0.7em;
+          color: $main-red;
+          padding-bottom: 10px;
+          margin-top: -10px;
+          width: 100%;
+        }
         input {
-          border-radius: 10px;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           padding: 10px;
           width: 100%;
           border: 2px solid $main-red;
+          border-radius: 10px;
         }
         input::placeholder {
-          color: $footer;
+          color: black;
         }
 
         .flex {
           display: block;
           gap: 10px;
-          .partner-tel-error-2 {
-            display: none;
-          }
+          width: 100%;
         }
 
         button {

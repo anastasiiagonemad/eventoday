@@ -106,6 +106,30 @@
       &-links {
         display: none;
       }
+      &-links-mob {
+        padding: 20px 15px 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          color: $main-red;
+          font-weight: 600;
+        }
+        details {
+          display: flex;
+          summary {
+            list-style: none;
+          }
+          summary::-webkit-details-marker {
+            display: none;
+          }
+          a {
+            text-align: end;
+            color: black;
+          }
+        }
+      }
 
       &-container {
         display: block;
