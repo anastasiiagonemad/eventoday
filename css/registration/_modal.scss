@@ -75,13 +75,13 @@
 
         label {
           align-self: flex-start;
-          margin-left: 25%;
+          margin-left: 0;
           font-size: 0.5em;
           color: $footer;
         }
 
         input::placeholder {
-          text-align: end;
+          text-align: start;
         }
       }
       &-tel {
