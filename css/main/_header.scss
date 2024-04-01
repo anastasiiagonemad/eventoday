@@ -59,9 +59,12 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .main__links,
-  .main__reg a {
+  .main__links {
     display: none;
+  }
+  .main__reg a {
+    margin-right: 5px;
+    margin-left: 5px;
   }
   .main__reg {
     gap: 0;
