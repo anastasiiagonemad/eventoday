@@ -3262,13 +3262,13 @@ footer {
     font-weight: 600;
   }
   .archive__2023-links-mob .select-dropdown, .archive__2022-links-mob .select-dropdown, .archive__2021-links-mob .select-dropdown, .archive__2020-links-mob .select-dropdown {
-    margin-right: 20%;
+    margin-right: 30%;
     position: relative;
     cursor: pointer;
   }
   .archive__2023-links-mob .select-dropdown span, .archive__2022-links-mob .select-dropdown span, .archive__2021-links-mob .select-dropdown span, .archive__2020-links-mob .select-dropdown span {
     display: flex;
-    margin-left: 300%;
+    margin-left: 500%;
     margin-bottom: 10px;
   }
   .archive__2023-links-mob .select-dropdown-content, .archive__2022-links-mob .select-dropdown-content, .archive__2021-links-mob .select-dropdown-content, .archive__2020-links-mob .select-dropdown-content {
