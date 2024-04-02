@@ -3275,16 +3275,18 @@ footer {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    border-radius: 15px;
     width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   .archive__2023-links-mob .select-dropdown-content a, .archive__2022-links-mob .select-dropdown-content a, .archive__2021-links-mob .select-dropdown-content a, .archive__2020-links-mob .select-dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 8px 15px;
     text-decoration: none;
     display: block;
     font-size: 0.6em;
+    font-weight: 400;
   }
   .archive__2023-links-mob .select-dropdown-content a:hover, .archive__2022-links-mob .select-dropdown-content a:hover, .archive__2021-links-mob .select-dropdown-content a:hover, .archive__2020-links-mob .select-dropdown-content a:hover {
     background-color: #f1f1f1;
