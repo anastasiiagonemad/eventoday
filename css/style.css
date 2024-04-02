@@ -3227,6 +3227,10 @@ footer {
   font-size: 1em;
 }
 
+.show {
+  display: block;
+}
+
 @media screen and (max-width: 600px) {
   .archive__title {
     margin-top: -50px;
@@ -3257,20 +3261,33 @@ footer {
     color: #cc1b00;
     font-weight: 600;
   }
-  .archive__2023-links-mob .custom-select, .archive__2022-links-mob .custom-select, .archive__2021-links-mob .custom-select, .archive__2020-links-mob .custom-select {
-    display: block;
-    margin-right: 10px;
-  }
-  .archive__2023-links-mob .custom-select select, .archive__2022-links-mob .custom-select select, .archive__2021-links-mob .custom-select select, .archive__2020-links-mob .custom-select select {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: lightgray;
-    border: none;
-    font-size: 1.2em;
-    width: 40px;
-    text-align: end;
+  .archive__2023-links-mob .select-dropdown, .archive__2022-links-mob .select-dropdown, .archive__2021-links-mob .select-dropdown, .archive__2020-links-mob .select-dropdown {
+    margin-right: 20%;
+    position: relative;
     cursor: pointer;
+  }
+  .archive__2023-links-mob .select-dropdown span, .archive__2022-links-mob .select-dropdown span, .archive__2021-links-mob .select-dropdown span, .archive__2020-links-mob .select-dropdown span {
+    display: flex;
+    margin-left: 300%;
+    margin-bottom: 10px;
+  }
+  .archive__2023-links-mob .select-dropdown-content, .archive__2022-links-mob .select-dropdown-content, .archive__2021-links-mob .select-dropdown-content, .archive__2020-links-mob .select-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .archive__2023-links-mob .select-dropdown-content a, .archive__2022-links-mob .select-dropdown-content a, .archive__2021-links-mob .select-dropdown-content a, .archive__2020-links-mob .select-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.6em;
+  }
+  .archive__2023-links-mob .select-dropdown-content a:hover, .archive__2022-links-mob .select-dropdown-content a:hover, .archive__2021-links-mob .select-dropdown-content a:hover, .archive__2020-links-mob .select-dropdown-content a:hover {
+    background-color: #f1f1f1;
   }
   .archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
     display: block;
