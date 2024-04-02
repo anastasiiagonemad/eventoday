@@ -3253,26 +3253,24 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  .archive__2023-links-mob div, .archive__2022-links-mob div, .archive__2021-links-mob div, .archive__2020-links-mob div {
+  .archive__2023-links-mob .mob-title, .archive__2022-links-mob .mob-title, .archive__2021-links-mob .mob-title, .archive__2020-links-mob .mob-title {
     color: #cc1b00;
     font-weight: 600;
   }
-  .archive__2023-links-mob button, .archive__2022-links-mob button, .archive__2021-links-mob button, .archive__2020-links-mob button {
-    border: none;
-    background-color: lightgray;
-  }
   .archive__2023-links-mob .custom-select, .archive__2022-links-mob .custom-select, .archive__2021-links-mob .custom-select, .archive__2020-links-mob .custom-select {
-    color: #616263;
-    overflow: hidden;
-    position: relative;
     display: block;
+    margin-right: 10px;
   }
   .archive__2023-links-mob .custom-select select, .archive__2022-links-mob .custom-select select, .archive__2021-links-mob .custom-select select, .archive__2020-links-mob .custom-select select {
-    padding: 5px;
-    display: block;
-    border: none;
-    background-color: #808080;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-color: lightgray;
+    border: none;
+    font-size: 1.2em;
+    width: 100px;
+    text-align: end;
+    cursor: pointer;
   }
   .archive__2023-container, .archive__2022-container, .archive__2021-container, .archive__2020-container {
     display: block;
